@@ -1,0 +1,80 @@
+.nav-link {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  color: aqua !important;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(./KronaOne-Regular.ttf);
+}
+
+.width {
+  width: 200px;
+  height: 10px;
+  margin: auto;
+  background-color: #f7fbfe;
+}
+
+.header1 {
+  width: 50px;
+  height: 3px;
+  background-color: #3199db;
+  margin: auto;
+  margin-bottom: -2px;
+  position: relative;
+}
+
+.header2 {
+  width: 160px;
+  height: 1px;
+  background-color: #dedede;
+  margin: auto;
+}
+
+.p1 {
+  padding-top: 60px;
+  font-family: myfont;
+  font-size: x-large;
+  text-align: center;
+  color: #424242;
+}
+
+.p2 {
+  padding-top: 15px;
+  color: #6e6e6e;
+}
+
+.image {
+  width: 55px;
+  height: 55px;
+  background-color: #ebf4fb;
+  border-radius: 50%;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+.box1 {
+  display: flex;
+}
+
+.content1 {
+  width: 50%;
+  padding-top: 10px;
+}
+
+.boks {
+  display: flex;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 15px;
+  padding: 10px;
+}
