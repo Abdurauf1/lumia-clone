@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Raleway;
+    src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
+}
+
+* {
+    font-family: Raleway, sans-serif;
+}
+
+:root {
+    --main-color: #3498db;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
