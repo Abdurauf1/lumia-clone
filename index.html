@@ -8,15 +8,16 @@
   <title>Document</title>
   <!-- import style.css -->
   <link rel="stylesheet" href="style.css">
-  <!-- import bootstrap css -->
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+  <!-- bootstrap css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md bg-white p-3">
+  <nav class="sticky-top navbar navbar-expand-md bg-white p-3 w-100">
     <div class="container">
       <!-- logo -->
       <h3 class="navbar-nav">
@@ -39,16 +40,24 @@
         <li class="nav-item">
           <a class="nav-link px-3" href="#">Testimonials</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" href="#">Drop Down</a>
-        </li>
+        <div class="dropdown">
+          <li class="nav-item">
+            <a class="nav-link px-3 dropdown-toggle" role="button" href="#" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">Drop Down</a>
+          </li>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
         <li class="nav-item">
           <a class="nav-link px-3" href="#">Contact</a>
         </li>
       </ul>
       <!-- social links -->
-      <ul class="navbar-nav view">
-        <li class="view">
+      <ul class="navbar-nav">
+        <li>
           <a href="/" class="nav-link px-1">
             <i class="bi bi-twitter"></i>
           </a>
@@ -72,20 +81,26 @@
     </div>
   </nav>
   <!-- header -->
-  <header style="background-image: url(./assets/img/hero-bg.jpg)">
-    <h1>Welcome to Lumia</h1>
-    <p>We are team of talanted designers making websites with Bootstrap</p>
-    <button>GET STARTED</button>
+  <header class="w-100 header-bg-img">
+    <div class="w-100 h-100 bg-dark d-flex align-items-center text-center" style="--bs-bg-opacity: .6;">
+      <section class="container">
+        <h1 class="text-white display-4">Welcome to <span class="lumia">Lumia</span></h1>
+        <p>We are team of talanted designers making websites with Bootstrap</p>
+        <button>get started</button>
+      </section>
+    </div>
   </header>
-  <!--  -->
-  <p class="p1">What We Do</p>
-  <div class="width">
-    <div class="header1"></div>
-    <div class="header2"></div>
-  </div>
-  <p class="text-center p2 font-weight-bold">
-    Magnam dolores commodi suscipit consequatur ex aliquid
-  </p>
+  <!-- section-1 -->
+  <section class="container">
+    <p class="p1">What We Do</p>
+    <div class="width">
+      <div class="header1"></div>
+      <div class="header2"></div>
+    </div>
+    <p class="text-center p2 font-weight-bold">
+      Magnam dolores commodi suscipit consequatur ex aliquid
+    </p>
+  </section>
 
   <!-- content1 -->
   <div class="container">
@@ -460,7 +475,7 @@
       <div class="d-flex">
         <div class="card" style="width: 350px; border: 0px">
           <p class="p">
-            <img style="width: 20px" src="./quotation.svg" alt="error" />
+            <img style="width: 20px" src="./assets/img/" alt="error" />
             Enim nisi quem export duis labore cillum quae magna enim sint
             quorum nulla quem veniam duis minim tempor labore quem eram duis
             noster aute amet eram fore quis sint minim.
@@ -475,7 +490,7 @@
         </div>
         <div class="card" style="width: 350px">
           <p class="p">
-            <img style="width: 20px" src="./quotation.svg" alt="error" />
+            <img style="width: 20px" src="./assets/img/" alt="error" />
             Enim nisi quem export duis labore cillum quae magna enim sint
             quorum nulla quem veniam duis minim tempor labore quem eram duis
             noster aute amet eram fore quis sint minim.
@@ -490,7 +505,7 @@
         </div>
         <div class="card" style="width: 350px">
           <p class="p">
-            <img style="width: 20px" src="./quotation.svg" alt="error" />
+            <img style="width: 20px" src="./assets/img/" alt="error" />
             Enim nisi quem export duis labore cillum quae magna enim sint
             quorum nulla quem veniam duis minim tempor labore quem eram duis
             noster aute amet eram fore quis sint minim.
@@ -508,7 +523,7 @@
       <div class="d-flex" style="justify-content: space-evenly">
         <div class="card" style="width: 350px">
           <p class="p">
-            <img style="width: 20px" src="./quotation.svg" alt="error" />
+            <img style="width: 20px" src="./assets/img/" alt="error" />
             Enim nisi quem export duis labore cillum quae magna enim sint
             quorum nulla quem veniam duis minim tempor labore quem eram duis
             noster aute amet eram fore quis sint minim.
@@ -523,7 +538,7 @@
         </div>
         <div class="card" style="width: 350px">
           <p class="p">
-            <img style="width: 20px" src="./quotation.svg" alt="error" />
+            <img style="width: 20px" src="./assets/img/" alt="error" />
             Enim nisi quem export duis labore cillum quae magna enim sint
             quorum nulla quem veniam duis minim tempor labore quem eram duis
             noster aute amet eram fore quis sint minim.
@@ -539,17 +554,6 @@
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <footer>
-      <div>Lumia</div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </footer>
-  </div>
-  <!-- bootstrap javascript -->
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

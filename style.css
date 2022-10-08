@@ -14,3 +14,15 @@
 .nav-link:hover {
     color: var(--main-color) !important;
 }
+
+.header-bg-img {
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/img/hero-bg.jpg);
+}
+
+.lumia {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color) !important;
+}
