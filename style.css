@@ -41,8 +41,12 @@ nav {
 }
 
 .nav-link {
-    /* color: var(--grey); */
-    color: red;
+    color: var(--grey) !important;
+}
+
+nav>div>ul>li>a>i {
+    color: var(--grey) !important;
+
 }
 
 header {
