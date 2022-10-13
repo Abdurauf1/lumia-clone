@@ -17,11 +17,11 @@
 
 <body>
   <!-- navbar -->
-  <nav class="sticky-top navbar navbar-expand-md bg-white p-3 w-100">
+  <nav class="shadow sticky-top navbar navbar-expand-md bg-white p-3 w-100">
     <div class="container">
       <!-- logo -->
       <h3 class="navbar-nav">
-        <a class=" text-decoration-none text-uppercase" style="color: #384046;" href="/">lumia</a>
+        <a class="text-decoration-none text-uppercase logo" style="color: #384046;" href="/">lumia</a>
       </h3>
       <!-- links -->
       <ul class="navbar-nav" style="margin-left: 190px;">
@@ -58,22 +58,22 @@
       <!-- social links -->
       <ul class="navbar-nav">
         <li>
-          <a href="/" class="nav-link px-1">
+          <a href="#" class="nav-link px-1">
             <i class="bi bi-twitter"></i>
           </a>
         </li>
         <li>
-          <a href="/" class="nav-link px-1">
+          <a href="#" class="nav-link px-1">
             <i class="bi bi-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="/" class="nav-link px-1">
+          <a href="#" class="nav-link px-1">
             <i class="bi bi-instagram"></i>
           </a>
         </li>
         <li>
-          <a href="/" class="nav-link px-1">
+          <a href="#" class="nav-link px-1">
             <i class="bi bi-linkedin"></i>
           </a>
         </li>
@@ -81,29 +81,22 @@
     </div>
   </nav>
   <!-- header -->
-  <header class="w-100 header-bg-img">
+  <header class="w-100">
     <div class="w-100 h-100 bg-dark d-flex align-items-center text-center" style="--bs-bg-opacity: .6;">
       <section class="container">
-        <h1 class="text-white display-4">Welcome to <span class="lumia">Lumia</span></h1>
-        <p>We are team of talanted designers making websites with Bootstrap</p>
-        <button class="btn bg-primary">get started</button>
+        <h1 class="text-white display-5">Welcome to <span class="lumia">Lumia</span></h1>
+        <p class="fs-4">We are team of talanted designers making websites with Bootstrap</p>
+        <button class="mt-2 text-uppercase btn text-light">get started</button>
       </section>
     </div>
   </header>
-  <!-- section-1 -->
-  <section class="container">
-    <p class="p1">What We Do</p>
-    <div class="width">
-      <div class="header1"></div>
-      <div class="header2"></div>
-    </div>
-    <p class="text-center p2 font-weight-bold">
+  <!-- what we do section -->
+  <section class="w-100 container py-5 section-one">
+    <h4 class="text-capitalize fs-2 my-2">what we do</h4>
+    <p class="text-center my-5">
       Magnam dolores commodi suscipit consequatur ex aliquid
     </p>
-  </section>
-
-  <!-- content1 -->
-  <div class="container">
+    <!-- cards -->
     <div class="row">
       <div class="col-4" style="height: 250px">
         <div class="image">
@@ -139,8 +132,7 @@
         </p>
       </div>
     </div>
-  </div>
-
+  </section>
   <!-- content2 -->
   <div class="container">
     <div class="row">
@@ -555,6 +547,7 @@
     </div>
   </div>
   <!-- local javascript file -->
+  <script src="main.js"></script>
 </body>
 
 </html>

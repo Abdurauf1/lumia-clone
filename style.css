@@ -1,28 +1,104 @@
 @font-face {
-    font-family: Raleway;
+    font-family: raleway;
     src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
+@font-face {
+    font-family: raleway-normal;
+    src: url(./assets/fonts/Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+
 * {
-    font-family: Raleway, sans-serif;
+    font-family: raleway;
+}
+
+p {
+    color: var(--grey);
 }
 
 :root {
-    --main-color: #3498db;
+    --grey: #444444;
+    --blue: #0d6efd;
+    --bright-blue: #3498db;
+    --main-black: #444444;
+}
+
+nav {
+    font-family: raleway, sans-serif;
 }
 
 .nav-link:hover {
-    color: var(--main-color) !important;
+    color: var(--bright-blue) !important;
 }
 
-.header-bg-img {
+.logo {
+    font-family: raleway-semibold;
+    letter-spacing: 1px;
+}
+
+header {
     height: 60vh;
     background-position: center;
     background-size: cover;
     background-image: url(./assets/img/hero-bg.jpg);
 }
 
-.lumia {
+header>div>section>h1>span {
     text-decoration: underline;
-    text-decoration-color: var(--main-color) !important;
+    text-decoration-color: var(--bright-blue) !important;
+}
+
+header>div>section>p {
+    font-family: raleway-normal, sans-serif;
+    color: rgba(255, 255, 255, .8);
+}
+
+header>div>section>button {
+    background-color: var(--bright-blue) !important;
+    font-family: sans-serif !important;
+    font-size: .74rem !important;
+    letter-spacing: 2px;
+    height: 2.7rem;
+    width: 10rem;
+    border-radius: 5px !important;
+}
+
+.section-one>h4 {
+    color: var(--main-black);
+    font-family: raleway-semibold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-one>h4::before {
+    content: "";
+    width: 100px;
+    height: 1px;
+    text-decoration: underline;
+    background-color: #ddd;
+    position: absolute;
+    top: 141%;
+    z-index: 1;
+}
+
+.section-one>h4::after {
+    content: "";
+    text-align: center;
+    width: 40px;
+    height: 3px;
+    text-decoration: underline;
+    background-color: var(--bright-blue);
+    position: absolute;
+    top: 139%;
+    z-index: 2;
+}
+
+.section-one>p {
+    font-family: raleway-normal;
 }
