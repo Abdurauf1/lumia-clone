@@ -17,15 +17,12 @@
     font-family: raleway;
 }
 
-p {
-    color: var(--grey);
-}
-
 :root {
+    /* #4f5a62 */
     --grey: #444444;
+    --light-grey: #4f5a62;
     --blue: #0d6efd;
     --bright-blue: #3498db;
-    --main-black: #444444;
 }
 
 nav {
@@ -33,12 +30,19 @@ nav {
 }
 
 .nav-link:hover {
+    transition-duration: .3s;
     color: var(--bright-blue) !important;
 }
 
 .logo {
     font-family: raleway-semibold;
     letter-spacing: 1px;
+    color: var(--grey);
+}
+
+.nav-link {
+    /* color: var(--grey); */
+    color: red;
 }
 
 header {
@@ -68,6 +72,11 @@ header>div>section>button {
     border-radius: 5px !important;
 }
 
+header>div>section>button:hover {
+    transition-duration: .5s;
+    background-color: #4EA5E0 !important;
+}
+
 .section-one>h4 {
     color: var(--main-black);
     font-family: raleway-semibold;
@@ -76,26 +85,26 @@ header>div>section>button {
     justify-content: center;
 }
 
-.section-one>h4::before {
+.section-one>h4::before,
+.section-one>h4::after {
     content: "";
+    text-decoration: underline;
+    position: absolute;
+}
+
+.section-one>h4::before {
     width: 100px;
     height: 1px;
-    text-decoration: underline;
     background-color: #ddd;
-    position: absolute;
-    top: 141%;
+    bottom: 0;
     z-index: 1;
 }
 
 .section-one>h4::after {
-    content: "";
-    text-align: center;
     width: 40px;
     height: 3px;
-    text-decoration: underline;
     background-color: var(--bright-blue);
-    position: absolute;
-    top: 139%;
+    bottom: -1px;
     z-index: 2;
 }
 
