@@ -1,5 +1,6 @@
+/* fonts */
 @font-face {
-    font-family: raleway;
+    font-family: raleway-bold;
     src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
@@ -13,25 +14,17 @@
     src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
 }
 
-* {
-    font-family: raleway;
-}
-
+/* variables */
 :root {
-    /* #4f5a62 */
-    --grey: #444444;
-    --light-grey: #4f5a62;
-    --blue: #0d6efd;
-    --bright-blue: #3498db;
+    --logo: #384046;
+    --nav-link: #4f5a62;
+    --social-icons: #9ba6af;
+    --nav-items-hover: #3498db;
 }
 
+/* navbar styles */
 nav {
-    font-family: raleway, sans-serif;
-}
-
-.nav-link:hover {
-    transition-duration: .3s;
-    color: var(--bright-blue) !important;
+    font-family: raleway-bold, sans-serif;
 }
 
 .logo {
@@ -41,14 +34,19 @@ nav {
 }
 
 .nav-link {
-    color: var(--grey) !important;
+    color: var(--light-grey) !important;
+}
+
+.nav-link:hover {
+    transition-duration: .3s;
+    color: var(--bright-blue) !important;
 }
 
 nav>div>ul>li>a>i {
-    color: var(--grey) !important;
-
+    color: var(--light-grey) !important;
 }
 
+/* header styles */
 header {
     height: 60vh;
     background-position: center;
