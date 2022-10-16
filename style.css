@@ -132,6 +132,52 @@
     --up-btn: #fff;
     --up-btn-bg: #3498db;
     --up-btn-bg-hover: #5faee3;
+
+    /* fonts */
+    ---logo: raleway;
+    --nav-text: poppins;
+    --header-text: raleway;
+    --header-btn: poppins;
+    --what-we-do-title: raleway;
+    --what-we-do-text: open sans;
+    --waht-we-do-card-title: raleway;
+    --waht-we-do-card-text: open sans;
+    --about-us-title: raleway;
+    --about-us-text: open sans;
+    --about-us-card-title: raleway;
+    --about-us-card-text: open sans;
+    --skill-text: poppins;
+    --skill-number: open sans;
+    --skill-text: raleway;
+    --services-title: raleway;
+    --services-text: open sans;
+    --services-card-title: raleway;
+    --services-card-text: open sans;
+    --portfolio-title: raleway;
+    --portfolio-text: open sans;
+    --filter-btn-text: open sans;
+    --portfolio-card-title: raleway;
+    --portfolio-card-text: open sans;
+    --testimonials-title: raleway;
+    --testimonials-text: open sans;
+    --testimonials-card-text: open sans;
+    --testimonials-card-title: raleway;
+    --testimonials-card-under-title: raleway;
+    --team-title: raleway;
+    --team-text: open sans;
+    --team-card-title: raleway;
+    --team-card-under-title: open sans;
+    --team-card-text: open sans;
+    --contact-title: raleway;
+    --contact-text: open sans;
+    --contact-card-title: raleway;
+    --contact-card-title: open sans;
+    --contact-input: inherit;
+    --contact-btn: inherit;
+    --footer-address: raleway;
+    --footer-links: open sans;
+    --footer-subs-btn: inherit;
+    --deep-footer: open sans;
 }
 
 /* navbar styles */
