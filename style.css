@@ -1,3 +1,11 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 /* fonts */
 @font-face {
     font-family: raleway-bold;
@@ -14,10 +22,9 @@
     src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
 }
 
-*,
-::before,
-::after {
-    box-sizing: border-box;
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 /* variables */
@@ -132,7 +139,6 @@
     --up-btn: #fff;
     --up-btn-bg: #3498db;
     --up-btn-bg-hover: #5faee3;
-
     /* fonts */
     ---logo: raleway;
     --nav-text: poppins;
@@ -183,31 +189,37 @@
 /* navbar styles */
 nav {
     font-family: raleway-bold, sans-serif;
+    box-shadow: var(--nav-box-shadow);
 }
 
-.logo {
-    font-family: raleway-semibold;
+nav div h3 a {
+    font-family: raleway-semibold, sans-serif;
     letter-spacing: 1px;
-    color: var(--grey);
+    color: var(--logo);
 }
 
-.nav-link {
-    color: var(--light-grey) !important;
+nav div h3 a:hover {
+    color: var(--logo);
 }
 
-.nav-link:hover {
+nav div ul li a {
+    color: var(--nav-link);
+    font-family: poppins-semibold, sans-serif;
+}
+
+nav div ul li a i {
+    color: var(--social-icons);
+}
+
+nav div ul li a:hover,
+nav div ul li a i:hover {
     transition-duration: .3s;
-    color: var(--bright-blue) !important;
-}
-
-nav>div>ul>li>a>i {
-    color: var(--light-grey) !important;
+    color: var(--nav-items-hover) !important;
 }
 
 header div {
     background-color: var(--header-cover) !important;
     opacity: .7 !important;
-
 }
 
 /* header styles */
