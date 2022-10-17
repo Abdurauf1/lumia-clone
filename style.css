@@ -4,9 +4,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: open-sans, sans-serif;
+    outline: none;
 }
 
 /* fonts */
+@font-face {
+    font-family: open-sans;
+    src: url(./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 @font-face {
     font-family: raleway-bold;
     src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
@@ -27,19 +34,28 @@
     src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: poppins-regular;
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
 /* variables */
 :root {
+    --white: #fff;
+    /* nav */
     --logo: #384046;
     --nav-link: #4f5a62;
     --social-icons: #9ba6af;
     --nav-items-hover: #3498db;
     --nav-box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
-    --header-cover: #444444;
+    /* header */
+    --header-cover: rgba(68, 68, 68, 0.7);
     --header-lumia-underline: #3498db;
     --header-text: rgba(255, 255, 255, 0.8);
     --header-btn-bg: #3498db;
     --header-btn-bg-hover: #4ea5e0;
     --header-btn-text: #fff;
+    /* what we do */
     --what-we-do-title: #444444;
     --what-we-do-title-underline-before: #ddd;
     --what-we-do-title-underline-after: #3498db;
@@ -139,56 +155,13 @@
     --up-btn: #fff;
     --up-btn-bg: #3498db;
     --up-btn-bg-hover: #5faee3;
-    /* fonts */
-    ---logo: raleway;
-    --nav-text: poppins;
-    --header-text: raleway;
-    --header-btn: poppins;
-    --what-we-do-title: raleway;
-    --what-we-do-text: open sans;
-    --waht-we-do-card-title: raleway;
-    --waht-we-do-card-text: open sans;
-    --about-us-title: raleway;
-    --about-us-text: open sans;
-    --about-us-card-title: raleway;
-    --about-us-card-text: open sans;
-    --skill-text: poppins;
-    --skill-number: open sans;
-    --skill-text: raleway;
-    --services-title: raleway;
-    --services-text: open sans;
-    --services-card-title: raleway;
-    --services-card-text: open sans;
-    --portfolio-title: raleway;
-    --portfolio-text: open sans;
-    --filter-btn-text: open sans;
-    --portfolio-card-title: raleway;
-    --portfolio-card-text: open sans;
-    --testimonials-title: raleway;
-    --testimonials-text: open sans;
-    --testimonials-card-text: open sans;
-    --testimonials-card-title: raleway;
-    --testimonials-card-under-title: raleway;
-    --team-title: raleway;
-    --team-text: open sans;
-    --team-card-title: raleway;
-    --team-card-under-title: open sans;
-    --team-card-text: open sans;
-    --contact-title: raleway;
-    --contact-text: open sans;
-    --contact-card-title: raleway;
-    --contact-card-title: open sans;
-    --contact-input: inherit;
-    --contact-btn: inherit;
-    --footer-address: raleway;
-    --footer-links: open sans;
-    --footer-subs-btn: inherit;
-    --deep-footer: open sans;
 }
 
+/* ------------------------------ */
 /* navbar styles */
+/* ------------------------------ */
+
 nav {
-    font-family: raleway-bold, sans-serif;
     box-shadow: var(--nav-box-shadow);
 }
 
@@ -217,12 +190,10 @@ nav div ul li a i:hover {
     color: var(--nav-items-hover) !important;
 }
 
-header div {
-    background-color: var(--header-cover) !important;
-    opacity: .7 !important;
-}
-
+/* ------------------------------ */
 /* header styles */
+/* ------------------------------ */
+
 header {
     height: 60vh;
     background-position: center;
@@ -230,62 +201,76 @@ header {
     background-image: url(./assets/img/hero-bg.jpg);
 }
 
-header>div>section>h1>span {
-    text-decoration: underline;
-    text-decoration-color: var(--bright-blue) !important;
+header div {
+    background-color: var(--header-cover);
 }
 
-header>div>section>p {
+header div section h1,
+header div section h1 span {
+    color: var(--white);
+    font-family: raleway-bold, sans-serif;
+}
+
+header div section h1 span {
+    border-bottom: 4px solid var(--header-lumia-underline);
+}
+
+header div section p {
     font-family: raleway-normal, sans-serif;
     color: rgba(255, 255, 255, .8);
 }
 
-header>div>section>button {
-    background-color: var(--bright-blue) !important;
-    font-family: sans-serif !important;
-    font-size: .74rem !important;
+header div section button {
+    transition-duration: .5s !important;
+    background-color: var(--header-btn-bg) !important;
+    font-family: poppins-regular, sans-serif !important;
+    font-size: .8rem !important;
     letter-spacing: 2px;
     height: 2.7rem;
     width: 10rem;
     border-radius: 5px !important;
 }
 
-header>div>section>button:hover {
-    transition-duration: .5s;
-    background-color: #4EA5E0 !important;
+header div section button:hover {
+    background-color: var(--header-btn-bg-hover) !important;
 }
 
-.section-one>h4 {
-    color: var(--main-black);
-    font-family: raleway-semibold;
-    position: relative;
-    display: flex;
-    justify-content: center;
+/* ------------------------------ */
+/* what we do */
+/* ------------------------------ */
+
+.section-one {
+    padding: 3.8rem 0;
 }
 
-.section-one>h4::before,
-.section-one>h4::after {
+.section-one h4 {
+    color: var(--what-we-do-title);
+    font-family: raleway-semibold, sans-serif;
+}
+
+.section-one h4::before,
+.section-one h4::after {
     content: "";
     text-decoration: underline;
     position: absolute;
 }
 
-.section-one>h4::before {
+.section-one h4::before {
     width: 100px;
     height: 1px;
-    background-color: #ddd;
-    bottom: 0;
+    background-color: var(--what-we-do-title-underline-before);
+    bottom: -29px;
     z-index: 1;
 }
 
-.section-one>h4::after {
+.section-one h4::after {
     width: 40px;
     height: 3px;
-    background-color: var(--bright-blue);
-    bottom: -1px;
+    background-color: var(--what-we-do-title-underline-after);
+    bottom: -30px;
     z-index: 2;
 }
 
-.section-one>p {
-    font-family: raleway-normal;
+.section-one p {
+    color: var(--what-we-do-text);
 }
