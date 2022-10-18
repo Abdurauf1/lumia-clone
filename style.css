@@ -241,6 +241,7 @@ header div section button:hover {
 
 .section-one {
     padding: 3.8rem 0;
+    transition-duration: 1s !important;
 }
 
 .section-one h4 {
@@ -259,7 +260,7 @@ header div section button:hover {
     width: 100px;
     height: 1px;
     background-color: var(--what-we-do-title-underline-before);
-    bottom: -29px;
+    bottom: -1.34rem;
     z-index: 1;
 }
 
@@ -267,10 +268,11 @@ header div section button:hover {
     width: 40px;
     height: 3px;
     background-color: var(--what-we-do-title-underline-after);
-    bottom: -30px;
+    bottom: -1.4rem;
     z-index: 2;
 }
 
 .section-one p {
+    margin: 2.5rem 0;
     color: var(--what-we-do-text);
 }
