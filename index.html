@@ -15,7 +15,6 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- bootstrap icons cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -77,51 +76,57 @@
   </nav>
   <!-- header -->
   <header class="w-100">
-    <div class="w-100 h-100 d-flex align-items-center text-center">
+    <div class="cover w-100 h-100 d-flex align-items-center text-center">
       <section class="container">
-        <h1 class="text-white display-5">Welcome to <span class="lumia">Lumia</span></h1>
-        <p class="fs-4">We are team of talented designers making websites with Bootstrap</p>
-        <button class="mt-2 text-uppercase btn text-light">get started</button>
+        <h1 class="header-title text-white display-5">Welcome to <span class="lumia">Lumia</span></h1>
+        <p class="fs-4 header-text">We are team of talented designers making websites with Bootstrap</p>
+        <button class="header-btn mt-2 text-uppercase btn text-light">get started</button>
       </section>
     </div>
   </header>
   <!-- what we do section -->
   <section class="w-100 container section-one">
-    <h4 class="text-capitalize fs-2 justify-content-center position-relative d-flex">what we do</h4>
-    <p class="text-center">
+    <h4 class="sec-one-title text-capitalize fs-2 justify-content-center position-relative d-flex">what we do</h4>
+    <p class="text-center sec-one-text">
       Magnam dolores commodi suscipit consequatur ex aliquid
     </p>
-    <div>
-      <div>
-        <div>
-          <i class="bx bxl-dribbble"></i>
+    <!-- cards wrapper -->
+    <div class="row d-flex justify-content-between">
+      <!-- card item -->
+      <div class="py-2 sec-one-card col-md-4 text-center">
+        <div class="my-3 mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+          <!-- card-icon -->
+          <iconify-icon class="fs-3 sec-one-card-icon" icon="bxl:dribbble"></iconify-icon>
         </div>
-        <h3>
-          <a href class="text-decoration-none">Lorem Ipsum</a>
-        </h3>
+        <h4>
+          <a href class="sec-one-card-title text-decoration-none">Lorem Ipsum</a>
+        </h4>
         <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
       </div>
-      <div>
-        <div>
-          <i class="bx bx-file "></i>
+      <!-- card item -->
+      <div class="py-2 sec-one-card col-md-4 text-center">
+        <div class="my-3 mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+          <!-- card-icon -->
+          <iconify-icon class="fs-3 sec-one-card-icon" icon="bx:file"></iconify-icon>
         </div>
-        <h3>
-          <a href class="text-decoration-none ">Sed ut perspiciatis</a>
-        </h3>
+        <h4>
+          <a href class="sec-one-card-title text-decoration-none">Sed ut perspiciatis</a>
+        </h4>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
       </div>
-      <div>
-        <div>
-          <i class="bx bx-tachometer"></i>
+      <!-- card item -->
+      <div class="py-2 sec-one-card col-md-4 text-center">
+        <div class="my-3 mx-auto justify-content-center d-flex align-items-center sec-one-i-container rounded-circle">
+          <!-- card-icon -->
+          <iconify-icon class="fs-3 sec-one-card-icon" icon="bx:tachometer"></iconify-icon>
         </div>
-        <h3>
-          <a href class="text-decoration-none">Magni Dolores</a>
-        </h3>
+        <h4>
+          <a href class="h4 sec-one-card-title text-decoration-none">Magni Dolores</a>
+        </h4>
         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
       </div>
     </div>
   </section>
-
   <!--  <div class="container">
     <div class="row">
       <div class="col-6">
@@ -528,8 +533,8 @@
       </div>
     </div>
   </div> -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+  <!-- iconify cdn -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </body>
 
 </html>
