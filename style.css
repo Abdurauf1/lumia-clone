@@ -39,10 +39,6 @@
 
 /* variables */
 :root {
-    --logo: #384046; /* logo */
-    --nav-link: #4f5a62;
-    --social-icons: #9ba6af;
-    --nav-box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     --header-cover: rgba(68, 68, 68, 0.7);
     --header-text: rgba(255, 255, 255, 0.8);
     --header-btn-bg-hover: #4ea5e0;
@@ -50,13 +46,10 @@
     --what-we-do-title-underline-before: #ddd;
     --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     --what-we-do-card-icon-container: #eaf4fb;
-    --what-we-do-card-title: #384046;
     --about-us-doc-and-cube-text: #848484;
-    --skill-text-and-number: #384046;
     --skill-progress-bar: #5faee3;
     --icon-number: #124364;
     --services-card-box-shadow: 0px 2px 22px rgb(0 0 0 / 8%);
-    --services-icon-title: #384046;
     --portfolio-filter-active-btn-text: #fff;
     --portfolio-card-box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow-hover: 0px 4px 14px rgb(0 0 0 / 16%);
@@ -64,7 +57,6 @@
     --portfolio-card-text: #b8b8b8;
     --portfolio-card-img-hover-bg: #000;
     --portfolio-card-img-hover-bg-opacity: 0.4;
-    --portfolio-card-img-icon: #384046;
     --portfolio-card-img-icon-hover: #fff;
     --portfolio-card-img-icon-bg: #fff;
     --testimonials-card-bg: #fff;
@@ -80,7 +72,6 @@
     --contact-card-bg: #fff;
     --contact-card-icon-hover: #fff;
     --contact-card-icon-bg: #eaf4fb;
-    --contact-card-title: #384046;
     --contact-card-text: #65747f;
     --contact-input-border: #ced4da;
     --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
@@ -102,6 +93,10 @@
 
     --white: #fff;
     --light-blue: #3498db;
+    --sky-blue: #4ea5e0;
+    --dark-grey: #384046;
+    --grey: #4f5a62;
+    --light-grey: #9ba6af;
 }
 
 /* ------------------------------ */
