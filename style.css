@@ -41,8 +41,6 @@
 :root {
     --header-cover: rgba(68, 68, 68, 0.7);
     --header-text: rgba(255, 255, 255, 0.8);
-    --header-btn-bg-hover: #4ea5e0;
-    --header-btn-text: #fff;
     --what-we-do-title-underline-before: #ddd;
     --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     --what-we-do-card-icon-container: #eaf4fb;
@@ -50,53 +48,41 @@
     --skill-progress-bar: #5faee3;
     --icon-number: #124364;
     --services-card-box-shadow: 0px 2px 22px rgb(0 0 0 / 8%);
-    --portfolio-filter-active-btn-text: #fff;
     --portfolio-card-box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow-hover: 0px 4px 14px rgb(0 0 0 / 16%);
     --portfolio-card-title: #333;
     --portfolio-card-text: #b8b8b8;
     --portfolio-card-img-hover-bg: #000;
     --portfolio-card-img-hover-bg-opacity: 0.4;
-    --portfolio-card-img-icon-hover: #fff;
-    --portfolio-card-img-icon-bg: #fff;
-    --testimonials-card-bg: #fff;
     --testimonials-card-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --testimonials-card-text-icon: #e1f0fa;
     --testimonials-card-title: #111;
     --testimonials-card-under-title: #999;
-    --testimonials-card-swiper-bg: #fff;
-    --team-card-bg: #fff;
     --team-card-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
     --team-card-text: #aaaaaa;
     --team-card-icon: #919191;
-    --contact-card-bg: #fff;
-    --contact-card-icon-hover: #fff;
     --contact-card-icon-bg: #eaf4fb;
     --contact-card-text: #65747f;
     --contact-input-border: #ced4da;
     --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
     --contact-input-text: #212529;
     --contact-btn-hover: #5faee3;
-    --contact-btn: #fff;
     --footer-address: #777777;
     --footer-links: #777777;
     --footer-input-border: #b6daf2;
     --footer-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
-    --footer-btn-text: #fff;
     --footer-btn-bg-hover: #57aae1;
     --footer-text-link-hover: #5faee3;
-    --footer-icon: #fff;
     --footer-icon-bg: #5faee3;
     --footer-icon-bg-hover: #5faee3;
-    --up-btn: #fff;
     --up-btn-bg-hover: #5faee3;
 
     --white: #fff;
-    --light-blue: #3498db;
-    --sky-blue: #4ea5e0;
-    --dark-grey: #384046;
-    --grey: #4f5a62;
-    --light-grey: #9ba6af;
+    --blue-1: #3498db;
+    --blue-2: #4ea5e0;
+    --grey-1: #384046;
+    --grey-2: #4f5a62;
+    --grey-3: #9ba6af;
 }
 
 /* ------------------------------ */
