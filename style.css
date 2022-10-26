@@ -41,7 +41,6 @@
 :root {
     --header-cover: rgba(68, 68, 68, 0.7);
     --header-text: rgba(255, 255, 255, 0.8);
-    --what-we-do-title-underline-before: #ddd;
     --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     --what-we-do-card-icon-container: #eaf4fb;
     --about-us-doc-and-cube-text: #848484;
@@ -77,12 +76,14 @@
     --footer-icon-bg-hover: #5faee3;
     --up-btn-bg-hover: #5faee3;
 
-    --white: #fff;
     --blue-1: #3498db;
     --blue-2: #4ea5e0;
     --grey-1: #384046;
     --grey-2: #4f5a62;
     --grey-3: #9ba6af;
+    --grey-4: #ddd;
+    --grey-5: #eaf4fb;
+    --white-1: #fff;
 }
 
 /* ------------------------------ */
@@ -206,9 +207,7 @@ header {
 
 .sec-one-card {
     width: 32% !important;
-    border: 1px solid black;
     transition-duration: .5s;
-
 }
 
 .sec-one-card:hover {
@@ -229,4 +228,10 @@ header {
     font-weight: 600;
     font-family: raleway-semiboldd, sans-serif;
     color: var(--what-we-do-card-title);
+    line-height: 2rem;
+}
+
+.sec-one-card-text {
+    font-size: .9rem;
+    line-height: 1.5rem;
 }
