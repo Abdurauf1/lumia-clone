@@ -42,32 +42,33 @@
     --header-cover: rgba(68, 68, 68, 0.7);
     --header-text: rgba(255, 255, 255, 0.8);
     --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-    --about-us-doc-and-cube-text: #848484;
-    --skill-progress-bar: #5faee3;
-    --icon-number: #124364;
     --services-card-box-shadow: 0px 2px 22px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow-hover: 0px 4px 14px rgb(0 0 0 / 16%);
+    --portfolio-card-img-hover-bg-opacity: 0.4;
+    --testimonials-card-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    --team-card-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
+    --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
+    --footer-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
+
+    --about-us-doc-and-cube-text: #848484;
+    --skill-progress-bar: #5faee3;
+    --icon-number: #124364;
     --portfolio-card-title: #333;
     --portfolio-card-text: #b8b8b8;
     --portfolio-card-img-hover-bg: #000;
-    --portfolio-card-img-hover-bg-opacity: 0.4;
-    --testimonials-card-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --testimonials-card-text-icon: #e1f0fa;
     --testimonials-card-title: #111;
     --testimonials-card-under-title: #999;
-    --team-card-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
     --team-card-text: #aaaaaa;
     --team-card-icon: #919191;
     --contact-card-text: #65747f;
     --contact-input-border: #ced4da;
-    --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
     --contact-input-text: #212529;
     --contact-btn-hover: #5faee3;
     --footer-address: #777777;
     --footer-links: #777777;
     --footer-input-border: #b6daf2;
-    --footer-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
     --footer-btn-bg-hover: #57aae1;
     --footer-text-link-hover: #5faee3;
     --footer-icon-bg: #5faee3;
@@ -78,10 +79,11 @@
     --blue-2: #4ea5e0;
     --grey-1: #384046;
     --grey-2: #4f5a62;
-    --grey-3: #9ba6af;
-    --grey-4: #ddd;
+    --grey-3: #848484;
+    --grey-4: #9ba6af;
+    --grey-: #ddd;
     --grey-5: #eaf4fb;
-    --white-1: #fff;
+    --white: #fff;
 }
 
 /* ------------------------------ */
