@@ -39,14 +39,6 @@
 
 /* variables */
 :root {
-    --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-    --services-card-box-shadow: 0px 2px 22px rgb(0 0 0 / 8%);
-    --portfolio-card-box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
-    --portfolio-card-box-shadow-hover: 0px 4px 14px rgb(0 0 0 / 16%);
-    --testimonials-card-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
-    --team-card-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
-    --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
-    --footer-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
     --blue-1: #124364;
     --blue-2: #3498db;
     --blue-3: #4ea5e0;
@@ -81,32 +73,36 @@
 /* ------------------------------ */
 
 nav {
-    box-shadow: var(--nav-box-shadow);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 
 .logo {
     font-family: raleway-semibold, sans-serif;
     letter-spacing: 1px;
-    color: var(--logo);
+    color: var(--grey-1);
 }
 
 .logo:hover {
-    color: var(--logo);
+    color: var(--grey-1);
 }
 
 .nav-link {
-    color: var(--nav-link);
+    color: var(--grey-2);
     font-family: poppins-semibold, sans-serif;
 }
 
 .nav-icon {
-    color: var(--social-icons) !important;
+    color: var(--grey-8) !important;
+}
+
+.nav-icon,
+.nav-link {
+    transition-duration: .5s;
 }
 
 .nav-icon:hover,
 .nav-link:hover {
-    transition-duration: .3s;
-    color: var(--nav-items-hover) !important;
+    color: var(--blue-2) !important;
 }
 
 /* ------------------------------ */
@@ -121,7 +117,7 @@ header {
 }
 
 .cover {
-    background-color: var(--header-cover);
+    background-color: rgba(56, 64, 70, 0.7);
 }
 
 .header-title,
@@ -131,28 +127,29 @@ header {
 }
 
 .lumia {
-    border-bottom: 4px solid var(--header-lumia-underline);
+    border-bottom: 4px solid var(--blue-2);
 }
 
 .header-text {
     font-family: raleway-normal, sans-serif;
-    color: rgba(255, 255, 255, .8);
+    color: var(--grey-11);
 }
 
 .header-btn {
+    color: var(--white);
     transition-duration: .5s !important;
-    background-color: var(--header-btn-bg) !important;
+    background-color: var(--blue-2) !important;
     font-family: poppins-regular, sans-serif !important;
     font-size: .8rem !important;
     letter-spacing: 2px;
     height: 2.7rem;
     width: 10rem;
     border-radius: 5px !important;
-    transform: none;
+    border: none !important;
 }
 
 .header-btn:hover {
-    background-color: var(--header-btn-bg-hover) !important;
+    background-color: var(--blue-3) !important;
 }
 
 /* ------------------------------ */
@@ -161,7 +158,6 @@ header {
 
 .section-one {
     padding: 3.8rem 0;
-    transition-duration: 1s !important;
 }
 
 .sec-one-title {
@@ -178,7 +174,7 @@ header {
 .sec-one-title::before {
     width: 100px;
     height: 1px;
-    background-color: var(--what-we-do-title-underline-before);
+    background-color: var(--grey-13);
     bottom: -1.34rem;
     z-index: 1;
 }
@@ -186,7 +182,7 @@ header {
 .sec-one-title::after {
     width: 40px;
     height: 3px;
-    background-color: var(--what-we-do-title-underline-after);
+    background-color: var(--blue-2);
     bottom: -1.4rem;
     z-index: 2;
 }
@@ -201,24 +197,29 @@ header {
 }
 
 .sec-one-card:hover {
-    box-shadow: var(--what-we-do-card-box-shadow);
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.102);
 }
 
 .sec-one-i-container {
-    width: 60px;
-    height: 60px;
-    background-color: var(--what-we-do-card-icon-container);
+    width: 63px;
+    height: 63px;
+    background-color: var(--grey-15);
 }
 
 .sec-one-card-icon {
-    color: var(--what-we-do-card-icon);
+    color: var(--blue-2);
 }
 
 .sec-one-card-title {
     font-weight: 600;
     font-family: raleway-semiboldd, sans-serif;
-    color: var(--what-we-do-card-title);
+    color: var(--grey-1);
     line-height: 2rem;
+    transition-duration: .5s;
+}
+
+.sec-one-card-title:hover {
+    color: var(--blue-2);
 }
 
 .sec-one-card-text {
