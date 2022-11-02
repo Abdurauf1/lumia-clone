@@ -39,44 +39,40 @@
 
 /* variables */
 :root {
-    --header-cover: rgba(68, 68, 68, 0.7);
-    --header-text: rgba(255, 255, 255, 0.8);
     --what-we-do-card-box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     --services-card-box-shadow: 0px 2px 22px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --portfolio-card-box-shadow-hover: 0px 4px 14px rgb(0 0 0 / 16%);
-    --portfolio-card-img-hover-bg-opacity: 0.4;
     --testimonials-card-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
     --team-card-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
     --contact-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
     --footer-input-border-active: rgb(118, 118, 118), rgb(133, 133, 133);
-
-    --icon-number: #124364;
-    --portfolio-card-title: #333;
-    --portfolio-card-text: #b8b8b8;
-    --testimonials-card-text-icon: #e1f0fa;
-    --testimonials-card-under-title: #999;
-    --team-card-text: #aaaaaa;
-    --team-card-icon: #919191;
-    --contact-card-text: #65747f;
-    --contact-input-border: #ced4da;
-    --contact-input-text: #212529;
-    --footer-address: #777777;
-    --footer-links: #777777;
-    --footer-input-border: #b6daf2;
-    --footer-btn-bg-hover: #57aae1;
-
-    --blue-1: #3498db;
-    --blue-2: #4ea5e0;
-    --blue-3: #5faee3;
-    --black-1: #000;
+    --blue-1: #124364;
+    --blue-2: #3498db;
+    --blue-3: #4ea5e0;
+    --blue-4: #57aae1;
+    --blue-5: #5faee3;
+    --blue-6: #b6daf2;
+    --black: #000;
     --black-2: #111;
+    --black-3: #212529;
+    --black-4: #333;
+    --black-5: #444444b3;
     --grey-1: #384046;
     --grey-2: #4f5a62;
-    --grey-3: #848484;
-    --grey-4: #9ba6af;
-    --grey-5: #ddd;
-    --grey-6: #eaf4fb;
+    --grey-3: #65747f;
+    --grey-4: #777777;
+    --grey-5: #848484;
+    --grey-6: #999;
+    --grey-7: #919191;
+    --grey-8: #9ba6af;
+    --grey-9: #aaaaaa;
+    --grey-10: #b8b8b8;
+    --grey-11: #ffffffcc;
+    --grey-12: #ced4da;
+    --grey-13: #ddd;
+    --grey-14: #e1f0fa;
+    --grey-15: #eaf4fb;
     --white: #fff;
 }
 
