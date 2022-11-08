@@ -157,7 +157,7 @@ header {
 /* ------------------------------ */
 
 .section-one {
-    padding: 3.8rem 0;
+    padding: 3.5rem 0 2.4rem 0 !important;
 }
 
 .sec-one-title {
@@ -200,6 +200,10 @@ header {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.102);
 }
 
+.sec-one-card:hover .sec-one-card-title {
+    color: var(--blue-2);
+}
+
 .sec-one-i-container {
     width: 63px;
     height: 63px;
@@ -225,4 +229,26 @@ header {
 .sec-one-card-text {
     font-size: .9rem;
     line-height: 1.5rem;
+}
+
+.section-two {
+    padding: 2.4rem 0 !important;
+}
+
+.about-us-img {
+    width: 49%;
+    height: 10%;
+}
+
+.about-us {
+    width: 49%;
+}
+
+.about-us-title {
+    font-family: raleway-semibold, sans-serif;
+}
+
+.check-all-icon {
+    color: var(--blue-2);
+    margin-right: .3rem;
 }
