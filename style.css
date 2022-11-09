@@ -252,3 +252,23 @@ header {
     color: var(--blue-2);
     margin-right: .3rem;
 }
+
+.receipt-icon {
+    font-size: 3rem;
+    color: var(--blue-2);
+}
+
+.about-us div:nth-child(2) div {
+    /* width: 50%; */
+}
+
+.about-us div:nth-child(2) div h4 {
+    font-family: raleway-bold, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+.about-us div:nth-child(2) div p {
+    color: var(--grey-5);
+    font-size: .95rem !important;
+}
