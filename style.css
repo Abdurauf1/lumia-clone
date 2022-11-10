@@ -230,14 +230,14 @@ header {
 }
 
 /* ------------------------------ */
-/* about-us-section-two */
+/* about us section two */
 /* ------------------------------ */
 
 .section-two {
     padding: 2.5rem 0 !important;
 }
 
-/* about-us */
+/* about us */
 
 .about-us-img {
     width: 49%;
@@ -292,7 +292,7 @@ header {
     background-color: var(--blue-5);
 }
 
-/* about-out-work */
+/* about out work */
 
 .our-work div {
     width: 3rem;
@@ -314,3 +314,4 @@ header {
     font-size: .9rem;
     font-family: raleway-normal, sans-serif;
 }
+
