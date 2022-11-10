@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: open-sans, sans-serif;
     color: #444444;
 }
@@ -258,10 +256,6 @@ header {
     color: var(--blue-2);
 }
 
-.about-us div:nth-child(2) div {
-    /* width: 50%; */
-}
-
 .about-us div:nth-child(2) div h4 {
     font-family: raleway-bold, sans-serif;
     font-size: 1.3rem;
@@ -271,4 +265,21 @@ header {
 .about-us div:nth-child(2) div p {
     color: var(--grey-5);
     font-size: .95rem !important;
+}
+
+.skill-container div:nth-child(1) {
+    line-height: 3.5rem;
+}
+
+.skill {
+    font-family: poppins-semibold, sans-serif;
+    font-size: .75rem;
+}
+
+.skill-container div:nth-child(2) {
+    height: .6rem;
+}
+
+.skill-container div:nth-child(2) div {
+    background-color: var(--blue-5);
 }
