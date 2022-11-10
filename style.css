@@ -229,9 +229,15 @@ header {
     line-height: 1.5rem;
 }
 
+/* ------------------------------ */
+/* about-us-section-two */
+/* ------------------------------ */
+
 .section-two {
-    padding: 2.4rem 0 !important;
+    padding: 2.5rem 0 !important;
 }
+
+/* about-us */
 
 .about-us-img {
     width: 49%;
@@ -267,6 +273,8 @@ header {
     font-size: .95rem !important;
 }
 
+/* skills */
+
 .skill-container div:nth-child(1) {
     line-height: 3.5rem;
 }
@@ -282,4 +290,27 @@ header {
 
 .skill-container div:nth-child(2) div {
     background-color: var(--blue-5);
+}
+
+/* about-out-work */
+
+.our-work div {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--blue-2);
+}
+
+.our-work div i {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.our-work h1 {
+    color: var(--blue-1);
+    font-weight: 600;
+}
+
+.our-work p {
+    font-size: .9rem;
+    font-family: raleway-normal, sans-serif;
 }
