@@ -4,6 +4,11 @@
     color: #444444;
 }
 
+::selection {
+    color: var(--white);
+    background: var(--blue-6);
+}
+
 /* fonts */
 @font-face {
     font-family: open-sans;
@@ -23,6 +28,11 @@
 @font-face {
     font-family: raleway-semibold;
     src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: raleway-light;
+    src: url(./assets/fonts/Raleway/static/Raleway-Light.ttf);
 }
 
 @font-face {
@@ -63,6 +73,7 @@
     --grey-13: #ddd;
     --grey-14: #e1f0fa;
     --grey-15: #eaf4fb;
+    --grey-16: #f7fbfe;
     --white: #fff;
 }
 
@@ -154,8 +165,8 @@ header {
 /* what we do */
 /* ------------------------------ */
 
-.section-one {
-    padding: 3.5rem 0 2.4rem 0 !important;
+.what-we-do {
+    padding: 3.75rem;
 }
 
 .sec-one-title {
@@ -233,11 +244,11 @@ header {
 /* about us section two */
 /* ------------------------------ */
 
-.section-two {
-    padding: 2.5rem 0 !important;
-}
-
 /* about us */
+
+.about-us-wrapper {
+    padding: .625rem 0;
+}
 
 .about-us-img {
     width: 49%;
@@ -275,6 +286,10 @@ header {
 
 /* skills */
 
+.skills-wrapper {
+    padding: 3.75rem 0;
+}
+
 .skill-container div:nth-child(1) {
     line-height: 3.5rem;
 }
@@ -294,6 +309,10 @@ header {
 
 /* about out work */
 
+.our-work-wrapper {
+    padding: 1.100rem 0 2.5rem 0;
+}
+
 .our-work div {
     width: 3rem;
     height: 3rem;
@@ -308,10 +327,47 @@ header {
 .our-work h1 {
     color: var(--blue-1);
     font-weight: 600;
+    letter-spacing: .1rem;
 }
 
 .our-work p {
     font-size: .9rem;
-    font-family: raleway-normal, sans-serif;
+    font-family: raleway-light, sans-serif;
 }
 
+/* ------------------------------ */
+/* services section three */
+/* ------------------------------ */
+
+.services {
+    background-color: var(--grey-16);
+    padding: 3.75rem 0;
+}
+
+.services-card {
+    border-radius: .5rem;
+    padding: 1.875rem !important;
+    transition-duration: .5s;
+}
+
+.services-card:hover {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.102);
+}
+
+.services-card i {
+    color: var(--blue-2);
+    margin-right: 2rem;
+}
+
+.services-card div {
+    /* padding: 0; */
+}
+
+.services-card div h5 a {
+    color: var(--grey-1);
+    font-family: raleway-bold, sans-serif;
+}
+
+.services-card p {
+    font-size: .9rem;
+}
