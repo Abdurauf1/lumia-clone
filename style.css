@@ -192,7 +192,7 @@ header {
 }
 
 .sec-one-text {
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 2rem 0;
 }
 
 .sec-one-card {
@@ -236,7 +236,7 @@ header {
 }
 
 /* ------------------------------ */
-/* about us section two */
+/* about us */
 /* ------------------------------ */
 
 /* about us */
@@ -302,7 +302,7 @@ header {
     background-color: var(--blue-5);
 }
 
-/* about out work */
+/* about our work */
 
 .our-work-wrapper {
     padding: 1.100rem 0 2.5rem 0;
@@ -331,7 +331,7 @@ header {
 }
 
 /* ------------------------------ */
-/* services section three */
+/* services */
 /* ------------------------------ */
 
 .services {
@@ -379,6 +379,33 @@ header {
     line-height: 1.6rem;
 }
 
-.d {
+/* ------------------------------ */
+/* portfolio */
+/* ------------------------------ */
+
+.portfolio {
     padding: 3.75rem 0;
 }
+
+/* buttons */
+
+.buttons-wrapper {
+    width: 17rem;
+}
+
+.buttons-wrapper button {
+    width: 3.8rem;
+    padding: .7rem 0;
+    font-size: .75rem;
+    background-color: var(--white);
+    transition-duration: .5s;
+    border-radius: .2rem;
+}
+
+.buttons-wrapper button:hover {
+    color: var(--white);
+    background-color: var(--blue-2);
+}
+
+/* cards */
+
