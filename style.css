@@ -4,11 +4,6 @@
     color: #444444;
 }
 
-::selection {
-    color: var(--white);
-    background: var(--blue-6);
-}
-
 /* fonts */
 @font-face {
     font-family: open-sans;
@@ -344,7 +339,12 @@ header {
     padding: 3.75rem 0;
 }
 
+.services-card-wrapper {
+    height: 35rem;
+}
+
 .services-card {
+    height: 10rem;
     border-radius: .5rem;
     padding: 1.875rem !important;
     transition-duration: .5s;
@@ -354,20 +354,31 @@ header {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.102);
 }
 
+.services-card:hover .services-card-title {
+    color: var(--blue-2);
+}
+
 .services-card i {
     color: var(--blue-2);
     margin-right: 2rem;
 }
 
-.services-card div {
-    /* padding: 0; */
+.services-card div h5 {
+    margin-bottom: 1rem;
 }
 
-.services-card div h5 a {
+.services-card-title {
     color: var(--grey-1);
     font-family: raleway-bold, sans-serif;
+    transition-duration: .5s;
+    font-size: 1.125rem;
 }
 
 .services-card p {
     font-size: .9rem;
+    line-height: 1.6rem;
+}
+
+.d {
+    padding: 3.75rem 0;
 }
