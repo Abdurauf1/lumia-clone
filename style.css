@@ -393,7 +393,7 @@ header {
     width: 17rem;
 }
 
-.buttons-wrapper button {
+.buttons-wrapper>button {
     width: 3.8rem;
     padding: .7rem 0;
     font-size: .75rem;
@@ -403,22 +403,27 @@ header {
 
 .buttons-wrapper button:hover {
     color: var(--white);
-    background-color: var(--blue-2);
+    background-color: var(--blue-2) !important;
 }
 
 /* cards */
 
-.portfolio-card {
-    width: 32%;
-    height: 330px;
-    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
-    border: 1px solid black;
-    overflow: hidden;
-    position: relative;
+.portfolio-cards-wrapper {
+    height: 71.25rem;
+    margin-top: 2.5rem;
 }
 
-.portfolio-card img {
-    width: 100%;
+.portfolio-card {
+    width: 31.9%;
+    height: 20.625rem !important;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    overflow: hidden;
+    position: relative;
+    transition-duration: .3s;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
 .card-info {
@@ -428,4 +433,19 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.card-info h4 a {
+    color: var(--black-4);
+    font-size: 1.125rem;
+    font-family: raleway-bold, sans-serif;
+}
+
+.card-info h4 a:hover {
+    color: var(--blue-2);
+}
+
+.card-info p {
+    color: var(--grey-10);
+    font-size: 0.875rem;
 }
