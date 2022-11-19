@@ -449,3 +449,27 @@ header {
     color: var(--grey-10);
     font-size: 0.875rem;
 }
+
+/* onhover card details */
+.card-details {
+    background-color: var(--black);
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+}
+
+.card-details div {
+    
+}
+
+.card-details a {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.card-details a i {
+    color: var(--grey-1);
+}
