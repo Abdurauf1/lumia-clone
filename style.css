@@ -452,24 +452,56 @@ header {
 
 /* onhover card details */
 .card-details {
-    background-color: var(--black);
-    opacity: .5;
+    height: calc(100% - 90px) !important;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 80px;
+    display: flex;
+    align-items: center;
+    transition-duration: .3s;
 }
 
-.card-details div {
-    
+.card-details:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card-details:hover div a {
+    transform: translate(0rem);
 }
 
 .card-details a {
     width: 2.25rem;
     height: 2.25rem;
+    transition-duration: .3s;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.card-details a:hover {
+    background-color: var(--blue-2);
+}
+
+.card-details a:hover i {
+    color: var(--white);
+}
+
+.card-details a:nth-child(1) {
+    transform: translate(1.125rem);
+    left: calc(50% - 2.25rem);
+}
+
+.card-details a:nth-child(2) {
+    transform: translate(-1.125rem);
+    right: calc(50% - 2.25rem);
 }
 
 .card-details a i {
+    transition-duration: .3s;
     color: var(--grey-1);
+    font-size: 1.25rem;
 }
