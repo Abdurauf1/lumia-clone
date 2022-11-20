@@ -73,7 +73,11 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* ------------------------------ */
@@ -81,10 +85,12 @@ a {
 /* ------------------------------ */
 
 nav {
+    height: 4.375rem;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 
 .logo {
+    font-size: 1.75rem;
     font-family: raleway-semibold, sans-serif;
     letter-spacing: 1px;
     color: var(--grey-1) !important;
@@ -92,6 +98,7 @@ nav {
 
 .nav-link {
     color: var(--grey-2);
+    padding: 10px 0 10px 30px;
     font-family: poppins-semibold, sans-serif;
 }
 
@@ -107,6 +114,17 @@ nav {
 .nav-icon:hover,
 .nav-link:hover {
     color: var(--blue-2) !important;
+}
+
+
+.drop-down-menu {
+    display: none;
+}
+
+.deep-drop-down {}
+
+nav div button {
+    display: none;
 }
 
 /* ------------------------------ */
@@ -476,6 +494,7 @@ header {
     align-items: center;
     justify-content: center;
     position: absolute;
+    opacity: 0;
 }
 
 .card-hover-icons:hover {
@@ -498,10 +517,12 @@ header {
 
 .card-details:hover .card-hover-icons:first-child {
     transform: translate(2.7rem);
+    opacity: 1;
 }
 
 .card-details:hover .card-hover-icons:last-child {
     transform: translate(-2.7rem);
+    opacity: 1;
 }
 
 .card-hover-icons i {

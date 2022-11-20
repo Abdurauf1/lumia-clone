@@ -19,14 +19,14 @@
 
 <body>
     <!-- navbar -->
-    <nav class="sticky-top navbar navbar-expand-md bg-white p-3 w-100">
-        <div class="container">
+    <nav class="sticky-top navbar navbar-expand-md bg-white d-flex align-items-center">
+        <div class="container d-flex align-items-center">
             <!-- logo -->
-            <h3 class="navbar-nav">
-                <a class="text-decoration-none text-uppercase logo" href>lumia</a>
+            <h3 class="navbar-brand navbar-nav">
+                <a class="text-uppercase logo" href>lumia</a>
             </h3>
             <!-- links -->
-            <ul class="navbar-nav" style="margin-left: 190px;">
+            <ul class="navbar-nav d-flex align-items-center">
                 <li class="nav-item">
                     <a class="nav-link px-3" href="#">Home</a>
                 </li>
@@ -42,8 +42,50 @@
                 <li class="nav-item">
                     <a class="nav-link px-3" href="#">Testimonials</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Drop Down</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex align-items-center px-3" href="#">
+                        <span>Drop Down</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <!-- drop down menu -->
+                    <ul class="drop-down-menu">
+                        <li>
+                            <a href="#">Drop Down 1</a>
+                        </li>
+                        <!-- deep drop down -->
+                        <li>
+                            <a href="#">
+                                <span>Deep Drop Down</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="deep-drop-down">
+                                <li>
+                                    <a href="#">Deep Drop Down 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deep Drop Down 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deep Drop Down 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deep Drop Down 4</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deep Drop Down 5</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Drop Down 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Drop Down 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Drop Down 4</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-3" href="#">Contact</a>
@@ -52,26 +94,28 @@
             <!-- social links -->
             <ul class="navbar-nav">
                 <li>
-                    <a href="#" class="nav-link px-1">
+                    <a href="#" class="nav-link">
                         <i class="bi bi-twitter nav-icon"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link px-1">
+                    <a href="#" class="nav-link">
                         <i class="bi bi-facebook nav-icon"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/abdurauf_a_/" class="nav-link px-1">
+                    <a href="https://www.instagram.com/abdurauf_a_/" class="nav-link">
                         <i class="bi bi-instagram nav-icon"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/" class="nav-link px-1">
+                    <a href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/" class="nav-link">
                         <i class="bi bi-linkedin nav-icon"></i>
                     </a>
                 </li>
             </ul>
+            <!-- navbar toggler -->
+            <button></button>
         </div>
     </nav>
     <!-- header -->
@@ -395,10 +439,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -414,10 +458,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -433,10 +477,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -452,10 +496,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -471,10 +515,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -489,10 +533,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -508,10 +552,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
@@ -527,10 +571,10 @@
             <div class="portfolio-card">
                 <!-- visible only on hover -->
                 <div class="card-details">
-                    <a class="bg-white rounded-circle" href="#">
+                    <a class="card-hover-icons" href="#">
                         <i class="bi bi-plus"></i>
                     </a>
-                    <a class="bg-white rounded-circle" href="./portfolio-details.html">
+                    <a class="card-hover-icons" href="./portfolio-details.html">
                         <i class="bi bi-link-45deg"></i>
                     </a>
                 </div>
