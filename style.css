@@ -72,6 +72,10 @@
     color: #444444;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ------------------------------ */
 /* navbar styles */
 /* ------------------------------ */
@@ -83,11 +87,7 @@ nav {
 .logo {
     font-family: raleway-semibold, sans-serif;
     letter-spacing: 1px;
-    color: var(--grey-1);
-}
-
-.logo:hover {
-    color: var(--grey-1);
+    color: var(--grey-1) !important;
 }
 
 .nav-link {
