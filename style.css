@@ -466,11 +466,7 @@ header {
     background-color: rgba(0, 0, 0, .5);
 }
 
-.card-details:hover div a {
-    transform: translate(0rem);
-}
-
-.card-details a {
+.card-hover-icons {
     width: 2.25rem;
     height: 2.25rem;
     transition-duration: .3s;
@@ -482,25 +478,33 @@ header {
     position: absolute;
 }
 
-.card-details a:hover {
+.card-hover-icons:hover {
     background-color: var(--blue-2);
 }
 
-.card-details a:hover i {
+.card-hover-icons:hover i {
     color: var(--white);
 }
 
-.card-details a:nth-child(1) {
+.card-hover-icons:first-child {
     transform: translate(1.125rem);
     left: calc(50% - 2.25rem);
 }
 
-.card-details a:nth-child(2) {
+.card-hover-icons:last-child {
     transform: translate(-1.125rem);
     right: calc(50% - 2.25rem);
 }
 
-.card-details a i {
+.card-details:hover .card-hover-icons:first-child {
+    transform: translate(2.7rem);
+}
+
+.card-details:hover .card-hover-icons:last-child {
+    transform: translate(-2.7rem);
+}
+
+.card-hover-icons i {
     transition-duration: .3s;
     color: var(--grey-1);
     font-size: 1.25rem;
