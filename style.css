@@ -84,62 +84,13 @@ li {
 /* navbar styles */
 /* ------------------------------ */
 
-nav {
-    height: 4.375rem;
-    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
-}
 
-.logo {
-    font-size: 1.75rem;
-    font-family: raleway-semibold, sans-serif;
-    letter-spacing: 1px;
-    color: var(--grey-1) !important;
-}
-
-.dropdown-link,
-.nav-link {
-    font-size: 1rem !important;
-    color: var(--grey-2) !important;
-    font-family: poppins-semibold, sans-serif;
-    transition-duration: .5s;
-}
-
-.nav-link {
-    padding: 10px 0 10px 30px !important;
-}
-
-/* dropdown icon */
-.bi-chevron-down {
-    margin-left: 0.313rem;
-    font-size: 0.75rem;
-}
-
-.nav-icon {
-    color: var(--grey-8) !important;
-    transition-duration: .5s;
-    padding: 0 0 0 .5rem;
-}
-
-.nav-icon:hover,
-.nav-link:hover {
-    color: var(--blue-2) !important;
-}
-
-.drop-down-menu {
-    display: none;
-}
-
-/* .deep-drop-down {} */
-
-.nav-toggler {
-    display: none;
-}
 
 /* ------------------------------ */
 /* header styles */
 /* ------------------------------ */
 
-header {
+.header {
     height: 60vh;
     background-position: center;
     background-size: cover;
