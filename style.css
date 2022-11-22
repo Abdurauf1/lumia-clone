@@ -84,6 +84,19 @@ li {
 /* navbar styles */
 /* ------------------------------ */
 
+/* nav-logo */
+.nav-logo a {
+    color: var(--grey-1);
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: raleway-semibold, sans-serif;
+}
+
+.nav-logo a:hover {
+    color: var(--grey-1);
+}
+
 /* nav toggler button */
 .nav-toggler-btn {
     color: var(--grey-1);
