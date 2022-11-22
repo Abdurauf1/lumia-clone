@@ -84,7 +84,13 @@ li {
 /* navbar styles */
 /* ------------------------------ */
 
-
+/* nav toggler button */
+.nav-toggler-btn {
+    color: var(--grey-1);
+    font-size: 1.75rem;
+    line-height: 0;
+    display: none;
+}
 
 /* ------------------------------ */
 /* header styles */
