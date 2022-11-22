@@ -19,36 +19,36 @@
 
 <body>
     <!-- navbar -->
-    <nav>
-        <div>
+    <header class="bg-white d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
             <!-- nav-logo -->
-            <h1 class="nav-logo">
-                <a href class="text-uppercase">lumia</a>
+            <h1 class="nav-logo me-auto d-flex align-items-center">
+                <a class="text-uppercase" href>lumia</a>
             </h1>
             <!-- nav links -->
-            <ul>
-                <li>
-                    <a href="#home">home</a>
+            <nav class="nav-list-wrapper d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="text-capitalize" href="#home">home</a>
                 </li>
                 <li>
-                    <a href="#about">about</a>
+                    <a class="text-capitalize" href="#about">about</a>
                 </li>
                 <li>
-                    <a href="#services">services</a>
+                    <a class="text-capitalize" href="#services">services</a>
                 </li>
                 <li>
-                    <a href="#portfolio">portfolio</a>
+                    <a class="text-capitalize" href="#portfolio">portfolio</a>
                 </li>
                 <li>
-                    <a href="#testimonials">testimonials</a>
+                    <a class="text-capitalize" href="#testimonials">testimonials</a>
                 </li>
                 <!-- drop down -->
-                <li>
-                    <a href="#dropdown">
-                        <span>drop down</span>
+                <li class="align-items-center d-flex">
+                    <a href="#" class="d-flex align-items-center">
+                        <span class="text-capitalize">drop down</span>
                         <i class="bi bi-chevron-down"></i>
                     </a>
-                    <ul>
+                    <ul class="drop-down-list">
                         <li>
                             <a href="#">drop down 1</a>
                         </li>
@@ -58,7 +58,7 @@
                                 <span>deep drop down</span>
                                 <i class="bi bi-chevron-right"></i>
                             </a>
-                            <ul>
+                            <ul class="deep-drop-down-list">
                                 <li>
                                     <a href="#">deep drop down 1</a>
                                 </li>
@@ -88,9 +88,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#contact">contact</a>
+                    <a class="text-capitalize" href="#contact">contact</a>
                 </li>
-            </ul>
+            </nav>
             <!-- social links -->
             <div>
                 <a href="#">
@@ -111,7 +111,7 @@
                 <i class="bi bi-list"></i>
             </button>
         </div>
-    </nav>
+    </header>
     <!-- header -->
     <section id="home" class="header w-100">
         <div class="cover w-100 h-100 d-flex align-items-center text-center">

@@ -9,8 +9,9 @@
     --black: #000;
     --black-2: #111;
     --black-3: #212529;
-    --black-4: #333;
-    --black-5: #444444b3;
+    --black-4: #21262a;
+    --black-5: #333;
+    --black-6: #444444b3;
     --grey-1: #384046;
     --grey-2: #4f5a62;
     --grey-3: #65747f;
@@ -66,6 +67,11 @@
     src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: poppins-medium;
+    src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
 * {
     box-sizing: border-box;
     font-family: open-sans, sans-serif;
@@ -84,17 +90,53 @@ li {
 /* navbar styles */
 /* ------------------------------ */
 
+header {
+    height: 4.375rem;
+    z-index: 999;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
 /* nav-logo */
+.nav-logo {
+    margin: 0;
+}
+
 .nav-logo a {
     color: var(--grey-1);
     font-size: 1.75rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-weight: 600;
     font-family: raleway-semibold, sans-serif;
 }
 
 .nav-logo a:hover {
     color: var(--grey-1);
+}
+
+/* nav-links */
+.nav-list-wrapper {
+    padding: 0.625rem 0 0.625rem 1.875rem;
+    margin: 0;
+}
+
+.nav-list-wrapper li a,
+.nav-list-wrapper li a span {
+    color: var(--grey-2);
+    font-family: poppins-medium, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.bi-chevron-down {
+    font-size: 0.75rem;
+    line-height: 0;
+    margin-left: 0.313rem;
+}
+
+/* drop-down */
+.drop-down-list,
+.deep-drop-down-list {
+    display: none;
 }
 
 /* nav toggler button */
