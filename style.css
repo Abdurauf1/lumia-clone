@@ -116,16 +116,16 @@ nav {
     color: var(--blue-2) !important;
 }
 
-
 .drop-down-menu {
     display: none;
 }
 
-.deep-drop-down {}
+/* .deep-drop-down {} */
 
 nav div button {
     display: none;
 }
+
 
 /* ------------------------------ */
 /* header styles */
