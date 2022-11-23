@@ -91,7 +91,7 @@ li {
 /* ---------------------------------------------------------- */
 
 header {
-    height: 4.375rem;
+    height: 70px;
     z-index: 999;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
@@ -103,9 +103,8 @@ header {
 
 .nav-logo a {
     color: var(--grey-1);
-    font-size: 1.75rem;
-    letter-spacing: 0.063rem;
-    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
     font-family: raleway-semibold, sans-serif;
 }
 
@@ -115,14 +114,14 @@ header {
 
 /* nav links */
 .nav-link {
-    padding: 0.625rem 0 0.625rem 1.875rem !important;
+    padding: 10px 0 10px 30px !important;
 }
 
 .nav-link,
 nav li a span {
     color: var(--grey-2) !important;
     font-family: poppins-medium, sans-serif;
-    font-size: 1rem !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
     transition-duration: .3s !important;
 }
@@ -135,9 +134,9 @@ nav li a span {
 }
 
 .bi-chevron-down {
-    font-size: 0.75rem;
+    font-size: 12px;
     line-height: 0;
-    margin-left: 0.313rem;
+    margin-left: 5px;
 }
 
 /* drop down */
@@ -148,11 +147,11 @@ nav li a span {
 
 /* navbar social links */
 .nav-social-links {
-    margin-left: 1.875rem;
+    margin-left: 30px;
 }
 
 .nav-social-links a {
-    padding-left: 0.5rem;
+    padding-left: 8px;
 }
 
 .nav-social-links a i {
@@ -163,10 +162,30 @@ nav li a span {
 
 /* nav toggler button */
 .nav-toggler-btn {
-    color: var(--grey-1);
-    font-size: 1.75rem;
-    line-height: 0;
     display: none;
+}
+
+.nav-toggler-btn i {
+    color: var(--grey-1);
+    font-size: 28px;
+    line-height: 0;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 768px) {
+    .nav-social-links {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        display: none !important;
+    }
+
+    .nav-toggler-btn {
+        display: block;
+    }
 }
 
 /* ---------------------------------------------------------- */
