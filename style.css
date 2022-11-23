@@ -234,12 +234,6 @@ nav li a span {
         line-height: 0;
         font-size: 28px;
     }
-}
-
-@media screen and (max-width: 992px) {
-    nav {
-        /* display: none !important; */
-    }
 
     .nav-toggler-btn {
         display: block;
