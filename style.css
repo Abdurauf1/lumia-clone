@@ -83,7 +83,7 @@ a {
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
 }
 
 /* ---------------------------------------------------------- */
@@ -92,8 +92,8 @@ li {
 
 header {
     height: 70px;
-    z-index: 999;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: .5s;
 }
 
 /* nav logo */
@@ -113,20 +113,25 @@ header {
 }
 
 /* nav links */
-.nav-link {
+nav ul {
+    padding: 0;
+}
+
+nav li a {
     padding: 10px 0 10px 30px !important;
 }
 
-.nav-link,
+nav li a,
 nav li a span {
-    color: var(--grey-1) !important;
+    color: var(--grey-2) !important;
     font-family: poppins-medium, sans-serif;
     font-size: 16px !important;
     font-weight: 500 !important;
     transition-duration: .3s !important;
+    transition: .3s;
 }
 
-.nav-link:hover,
+nav li a:hover,
 .drop-down:hover a span,
 .drop-down:hover a i,
 .nav-social-links a i:hover {
@@ -137,7 +142,7 @@ nav li a span {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
-    color: var(--grey-1);
+    color: var(--grey-2);
 }
 
 /* close nav button */
@@ -163,81 +168,17 @@ nav li a span {
 .nav-social-links a i {
     color: var(--grey-8);
     line-height: 0;
-    transition-duration: .3s;
+    transition: .3s;
 }
 
-/* nav toggler button */
-.nav-toggler-btn {
-    display: none;
-}
-
-.nav-toggler-btn i {
+/* nav open button */
+.nav-open-btn {
     color: var(--grey-1);
     font-size: 28px;
     line-height: 0;
-}
-
-/* responsive navbar */
-@media screen and (max-width: 768px) {
-    .nav-social-links {
-        margin-right: 15px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    nav {
-        background: rgba(33, 38, 42, 0.9);
-        position: fixed !important;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transition-duration: .3s;
-        display: none !important;
-    }
-
-    nav ul {
-        background-color: var(--white);
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        position: absolute;
-        top: 55px;
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
-        padding: 10px 0 !important;
-    }
-
-    nav ul li {
-        width: 100%;
-    }
-
-    .nav-link {
-        width: 100%;
-        font-size: 15px !important;
-        color: var(--grey-1) !important;
-        padding: 10px 20px !important;
-    }
-
-    .nav-link span {
-        font-size: 15px !important;
-        color: var(--grey-1) !important;
-    }
-
-    .close-nav-btn {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        cursor: pointer;
-        line-height: 0;
-        font-size: 28px;
-    }
-
-    .nav-toggler-btn {
-        display: block;
-    }
+    cursor: pointer;
+    transition: .5s;
+    display: none;
 }
 
 /* ---------------------------------------------------------- */

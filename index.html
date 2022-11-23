@@ -26,10 +26,10 @@
                 <a class="text-uppercase" href>lumia</a>
             </h1>
             <!-- nav links -->
-            <nav class="navbar p-0 m-0">
-                <ul class="d-flex align-items-center m-0 p-0">
+            <nav class="navbar p-0">
+                <ul class="d-flex align-items-center m-0">
                     <li>
-                        <a class="nav-link text-capitalize" href="#home">home</a>
+                        <a class="nav-link text-capitalize" href="#hero">home</a>
                     </li>
                     <li>
                         <a class="nav-link text-capitalize" href="#about">about</a>
@@ -44,7 +44,7 @@
                         <a class="nav-link text-capitalize" href="#testimonials">testimonials</a>
                     </li>
                     <!-- drop down -->
-                    <li class="drop-down align-items-center d-flex">
+                    <li class="drop-down">
                         <a class="nav-link d-flex align-items-center justify-content-between" href="#">
                             <span class="text-capitalize">drop down</span>
                             <i class="bi bi-chevron-down"></i>
@@ -92,6 +92,7 @@
                         <a class="nav-link text-capitalize" href="#contact">contact</a>
                     </li>
                 </ul>
+                <!-- close nav modal button -->
                 <i class="bi bi-x close-nav-btn text-white"></i>
             </nav>
             <!-- social links -->
@@ -109,14 +110,12 @@
                     <i class="bi bi-linkedin"></i>
                 </a>
             </div>
-            <!-- nav toggler button -->
-            <button class="nav-toggler-btn bg-white border-0">
-                <i class="bi bi-list"></i>
-            </button>
+            <!-- open nav modal button -->
+            <i class="bi bi-list nav-open-btn"></i>
         </div>
     </header>
     <!-- header -->
-    <section id="home" class="header w-100">
+    <section id="hero" class="header w-100">
         <div class="cover w-100 h-100 d-flex align-items-center text-center">
             <section class="container">
                 <h1 class="header-title text-white display-5">Welcome to <span class="lumia">Lumia</span></h1>
@@ -692,7 +691,6 @@
     </div>
   </div> -->
     </main>
-    <!-- footer -->
     <!-- iconify cdn -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <!-- bootstrap javascript component -->
