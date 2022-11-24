@@ -181,6 +181,78 @@ nav li a:hover,
     display: none;
 }
 
+/* responsive navbar */
+@media only screen and (max-width: 992px) {
+    nav {
+        display: none !important;
+    }
+
+    .nav-open-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-social-links {
+        margin-right: 15px;
+    }
+}
+
+/*
+    .nav-modal {
+        background: rgba(33, 38, 42, 0.9);
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: .3s;
+    }
+
+    nav ul {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 55px;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding: 10px 0 !important;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 15px !important;
+        color: var(--grey-1) !important;
+        padding: 10px 20px !important;
+    }
+
+    .nav-link span {
+        font-size: 15px !important;
+        color: var(--grey-1) !important;
+    }
+
+    .close-nav-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        line-height: 0;
+        font-size: 28px;
+    }
+
+    .nav-open-btn {
+        display: block;
+} */
+
+
 /* ---------------------------------------------------------- */
 /* header styles */
 /* ---------------------------------------------------------- */
