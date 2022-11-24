@@ -183,22 +183,6 @@ nav li a:hover,
 
 /* responsive navbar */
 @media only screen and (max-width: 992px) {
-    nav {
-        display: none !important;
-    }
-
-    .nav-open-btn {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .nav-social-links {
-        margin-right: 15px;
-    }
-}
-
-/*
     .nav-modal {
         background: rgba(33, 38, 42, 0.9);
         position: fixed !important;
@@ -220,6 +204,11 @@ nav li a:hover,
         left: 15px;
         right: 15px;
         padding: 10px 0 !important;
+        overflow-y: scroll;
+    }
+
+    .nav-open-btn {
+        display: block;
     }
 
     nav ul li {
@@ -247,11 +236,13 @@ nav li a:hover,
         line-height: 0;
         font-size: 28px;
     }
+}
 
-    .nav-open-btn {
-        display: block;
-} */
-
+@media only screen and (max-width: 768px) {
+    .nav-social-links {
+        margin-right: 15px;
+    }
+}
 
 /* ---------------------------------------------------------- */
 /* header styles */
