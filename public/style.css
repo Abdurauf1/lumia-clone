@@ -127,12 +127,13 @@ nav li a span {
     font-family: poppins-medium, sans-serif;
     font-size: 16px !important;
     font-weight: 500 !important;
-    transition-duration: .3s !important;
-    transition: .3s;
+    transition: .3s !important;
 }
 
 nav li:hover a,
-.nav-social-links a:hover i {
+.nav-social-links a:hover i,
+nav li a span:hover,
+nav li:hover a i {
     color: var(--blue-2) !important;
 }
 
@@ -143,9 +144,23 @@ nav li:hover a,
     color: var(--grey-2);
 }
 
+/* drop down */
+.drop-down-wrapper {
+    width: 200px;
+    height: 225px;
+    position: absolute;
+    left: 14px;
+
+}
+
+.deep-drop-down-wrapper {
+    display: none;
+}
+
 /* close nav button */
 .close-nav-btn {
     display: none;
+    visibility: hidden;
 }
 
 /* navbar social links */
@@ -175,6 +190,8 @@ nav li:hover a,
 
 /* responsive navbar */
 @media only screen and (max-width: 992px) {
+
+    /* nav styles */
     .nav-modal {
         background: rgba(33, 38, 42, 0.9);
         position: fixed !important;
@@ -221,17 +238,13 @@ nav li:hover a,
 
     .close-nav-btn {
         display: block;
+        visibility: visible;
         position: absolute;
         top: 15px;
         right: 15px;
         cursor: pointer;
         line-height: 0;
         font-size: 28px;
-    }
-
-    /* hero background image */
-    .header {
-        height: 100vh !important;
     }
 }
 
