@@ -1,42 +1,42 @@
 /* fonts */
 @font-face {
     font-family: open-sans;
-    src: url(../assets/fonts/Open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 @font-face {
     font-family: raleway-bold;
-    src: url(../assets/fonts/Raleway/static/Raleway-Bold.ttf);
+    src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
 }
 
 @font-face {
     font-family: raleway-normal;
-    src: url(../assets/fonts/Raleway/static/Raleway-Medium.ttf);
+    src: url(./assets/fonts/Raleway/static/Raleway-Medium.ttf);
 }
 
 @font-face {
     font-family: raleway-semibold;
-    src: url(../assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
+    src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
 }
 
 @font-face {
     font-family: raleway-light;
-    src: url(../assets/fonts/Raleway/static/Raleway-Light.ttf);
+    src: url(./assets/fonts/Raleway/static/Raleway-Light.ttf);
 }
 
 @font-face {
     font-family: poppins-semibold;
-    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face {
     font-family: poppins-regular;
-    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: poppins-medium;
-    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+    src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 /* variables */
@@ -262,7 +262,7 @@ nav li:hover a i {
     height: 60vh;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/img/hero-bg.jpg);
+    background-image: url(./assets/img/hero-bg.jpg);
 }
 
 .cover {
