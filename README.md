@@ -1,1 +1,1 @@
-## Link to website: [https://abdurauf1.github.io/lumia-landing-page/](https://abdurauf1.github.io/lumia-landing-page/)
+## Link to website: [https://abdurauf1.github.io/lumia-landing-page/public](https://abdurauf1.github.io/lumia-landing-page/public)
