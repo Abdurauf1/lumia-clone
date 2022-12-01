@@ -89,7 +89,6 @@ li {
 /* ---------------------------------------------------------- */
 /* navbar styles */
 /* ---------------------------------------------------------- */
-
 header {
     height: 70px;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
@@ -121,8 +120,8 @@ nav ul {
     padding: 10px 0 10px 30px !important;
 }
 
-nav li a,
-nav li a span {
+.nav-link,
+.nav-link-parent a span {
     color: var(--grey-2) !important;
     font-family: poppins-medium, sans-serif;
     font-size: 16px !important;
@@ -130,10 +129,10 @@ nav li a span {
     transition: .3s !important;
 }
 
-nav li:hover a,
-.nav-social-links a:hover i,
-nav li a span:hover,
-nav li:hover a i {
+.nav-link-parent:hover a,
+.nav-link-parent:hover a span,
+.nav-link-parent:hover a i,
+.nav-social-links a:hover i {
     color: var(--blue-2) !important;
 }
 
@@ -148,9 +147,27 @@ nav li:hover a i {
 .drop-down-wrapper {
     width: 200px;
     height: 225px;
-    position: absolute;
-    left: 14px;
+    padding: 10px 0;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    transition: .3s;
+    /* opacity: 0;
+    visibility: hidden; */
+}
 
+.drop-down-wrapper li {
+    min-width: 200px;
+}
+
+.nav-link-parent a,
+.nav-link-parent a span,
+.nav-link-parent a i {
+    font-size: 14px !important;
+    color: var(--black-4) !important;
+}
+
+.nav-link-parent a {
+    padding: 10px 20px !important;
 }
 
 .deep-drop-down-wrapper {
