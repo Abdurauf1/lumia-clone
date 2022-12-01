@@ -1,12 +1,11 @@
-"use strict";
 // responsive navbar
 // variables
-const nav = document.querySelector("nav");
-const openNav = document.querySelector(".nav-open-btn");
-const closeNav = document.querySelector(".close-nav-btn");
-openNav.addEventListener("click", () => {
+var nav = document.querySelector("nav");
+var openNav = document.querySelector(".nav-open-btn");
+var closeNav = document.querySelector(".close-nav-btn");
+openNav.addEventListener("click", function () {
     nav.classList.add("nav-modal");
 });
-closeNav.addEventListener("click", () => {
+closeNav.addEventListener("click", function () {
     nav.classList.remove("nav-modal");
 });
