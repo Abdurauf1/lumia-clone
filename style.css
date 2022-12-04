@@ -274,7 +274,7 @@ li:nth-child(2):hover i {
     }
 
     nav .nav-link-parent .nav-link span {
-        font-size: 15px !important;
+        font-size: 14px !important;
         color: var(--grey-1) !important;
     }
 
