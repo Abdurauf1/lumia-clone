@@ -138,9 +138,11 @@ nav ul {
 }
 
 .nav-link:hover,
-.nav-link-parent .nav-link:hover span,
-.nav-link:hover i,
-.nav-social-links a:hover i {
+.nav-social-links a:hover i,
+li:hover span,
+li:hover i,
+li:nth-child(2):hover span,
+li:nth-child(2):hover i {
     color: var(--blue-2) !important;
 }
 
@@ -260,7 +262,7 @@ nav ul {
         display: block;
     }
 
-    nav ul li {
+    .nav-link-parent {
         width: 100%;
     }
 
@@ -276,11 +278,16 @@ nav ul {
         color: var(--grey-1) !important;
     }
 
+    li:nth-child(6):hover .drop-down-span,
+    li:hover i,
+    li:nth-child(2):hover span,
+    li:nth-child(2):hover i {
+        color: var(--blue-2) !important;
+    }
+
     .bi-chevron-down {
         color: var(--grey-1);
     }
-
-
 
     .drop-down-wrapper,
     .deep-drop-down-wrapper {
