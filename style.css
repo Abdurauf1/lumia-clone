@@ -305,7 +305,6 @@ li:nth-child(2):hover i {
     }
 
     .close-nav-btn {
-        display: block;
         visibility: visible;
         position: absolute;
         top: 15px;
@@ -313,6 +312,10 @@ li:nth-child(2):hover i {
         cursor: pointer;
         line-height: 0;
         font-size: 28px;
+    }
+
+    .close-nav-btn {
+        display: none;
     }
 }
 
