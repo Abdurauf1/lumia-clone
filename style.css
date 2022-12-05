@@ -134,6 +134,13 @@ header {
     transition: .3s !important;
 }
 
+.bi-chevron-down {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    color: var(--grey-2);
+}
+
 .nav-link:hover,
 .nav-social-links a:hover i,
 li:hover span,
@@ -141,13 +148,6 @@ li:hover i,
 li:nth-child(2):hover span,
 li:nth-child(2):hover i {
     color: var(--blue-2) !important;
-}
-
-.bi-chevron-down {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    color: var(--grey-2);
 }
 
 /* navbar drop down */
