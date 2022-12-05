@@ -117,10 +117,6 @@ header {
 }
 
 /* nav links */
-nav ul {
-    padding: 0;
-}
-
 .nav-link-parent {
     position: relative;
 }
@@ -130,7 +126,7 @@ nav ul {
 }
 
 .nav-link,
-.nav-link-parent a span {
+.nav-link-span {
     color: var(--grey-2) !important;
     font-family: poppins-medium, sans-serif;
     font-size: 16px !important;
@@ -186,7 +182,7 @@ li:nth-child(2):hover i {
     padding: 10px 20px !important;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
 
     /* drop down hover */
     .nav-link-parent:nth-child(6):hover .drop-down-wrapper {
@@ -235,7 +231,7 @@ li:nth-child(2):hover i {
 }
 
 /* responsive navbar */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
     /* nav styles */
     .nav-modal {
