@@ -4,13 +4,13 @@
 const nav = document.querySelector("nav");
 const openNav = document.querySelector(".nav-open-btn");
 const closeNav = document.querySelector(".close-nav-btn");
-openNav.addEventListener("click", () => {
+openNav.addEventListener("click", openNavFunc);
+function openNavFunc() {
     nav.classList.add("nav-modal");
-    closeNav.style.display = "block";
-    openNav.style.display = "none";
-});
-closeNav.addEventListener("click", () => {
+    closeNav.classList.add("display-block");
+}
+closeNav.addEventListener("click", closeNavFunc);
+function closeNavFunc() {
     nav.classList.remove("nav-modal");
-    closeNav.style.display = "none";
-    openNav.style.display = "block";
-});
+    closeNav.classList.remove("display-block");
+}
