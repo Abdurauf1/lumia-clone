@@ -219,11 +219,19 @@ li:nth-child(2):hover i {
     cursor: pointer;
     line-height: 0;
     font-size: 28px;
-}
-
-.close-nav-btn {
     display: none;
 }
+
+/* display block class */
+.display-block {
+    display: block;
+}
+
+/* display none class */
+.display-none {
+    display: none;
+}
+
 
 /* responsive navbar */
 @media screen and (max-width: 991px) {
