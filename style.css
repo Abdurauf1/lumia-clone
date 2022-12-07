@@ -178,7 +178,7 @@ li:nth-child(2):hover i {
     font-family: poppins-regular, sans-serif !important;
 }
 
-.drop-down-wrapper li a {
+.drop-down-wrapper .nav-link {
     padding: 10px 20px !important;
 }
 
@@ -190,13 +190,11 @@ li:nth-child(2):hover i {
 }
 
 /* deep drop down hover */
-.drop-down-wrapper li:nth-child(2):hover .deep-drop-down-wrapper {
+.drop-down-wrapper .nav-link-parent:nth-child(2):hover .deep-drop-down-wrapper {
     opacity: 1;
     visibility: visible;
     left: calc(-100%);
 }
-
-
 
 /* navbar social links */
 .nav-social-links {
@@ -211,12 +209,6 @@ li:nth-child(2):hover i {
     color: var(--grey-8);
     line-height: 0;
     transition: .3s;
-}
-
-@media only screen and (max-width: 768px) {
-    .nav-social-links {
-        margin-right: 15px;
-    }
 }
 
 /* ---------------------------------------------------------- */
