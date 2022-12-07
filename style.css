@@ -196,6 +196,107 @@ li:nth-child(2):hover i {
     left: calc(-100%);
 }
 
+/* nav open button */
+.nav-open-btn {
+    color: var(--grey-1);
+    font-size: 28px;
+    line-height: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-open-btn {
+        display: none;
+    }
+}
+
+/* close nav button */
+.close-nav-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    line-height: 0;
+    font-size: 28px;
+}
+
+.close-nav-btn {
+    display: none;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 991px) {
+
+    /* nav styles */
+    .nav-modal {
+        background: rgba(33, 38, 42, 0.9);
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: .3s;
+    }
+
+    .nav-links-wrapper {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 55px;
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding: 10px 0 !important;
+        overflow-y: scroll;
+    }
+
+    .nav-link-parent {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        font-size: 15px !important;
+        color: var(--grey-1) !important;
+        padding: 10px 20px !important;
+    }
+
+    nav .nav-link-parent .nav-link span {
+        font-size: 14px !important;
+        color: var(--grey-1) !important;
+    }
+
+    li:nth-child(6):hover .drop-down-span,
+    li:hover i,
+    li:nth-child(2):hover span,
+    li:nth-child(2):hover i {
+        color: var(--blue-2) !important;
+    }
+
+    .bi-chevron-down {
+        color: var(--grey-1);
+    }
+
+    .drop-down-wrapper,
+    .deep-drop-down-wrapper {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+        position: static;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: .3s;
+        display: none;
+    }
+
+    .drop-down-mobile {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 /* navbar social links */
 .nav-social-links {
     margin-left: 30px;
@@ -209,6 +310,12 @@ li:nth-child(2):hover i {
     color: var(--grey-8);
     line-height: 0;
     transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-social-links {
+        margin-right: 15px;
+    }
 }
 
 /* ---------------------------------------------------------- */
