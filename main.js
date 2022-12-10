@@ -25,7 +25,8 @@ navLinks.forEach((link) => {
     });
 });
 // *** toggle drop down only in small screen sizes *** //
-if (window.innerWidth < 992) {
+const w = window.innerWidth;
+if (w < 992) {
     dropDownBtn.addEventListener("click", () => {
         dropDown.classList.toggle("toggle-drop-down");
     });

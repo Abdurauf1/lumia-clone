@@ -10,7 +10,7 @@ const navLinks = document.querySelectorAll("nav ul li a");
 const navWrapper = document.querySelector("header") as HTMLHeadElement;
 
 // *** link to section *** //
-navLinks.forEach((link) => {
+navLinks.forEach((link: any) => {
   link.addEventListener("click", (e: any) => {
     e.preventDefault();
     const id: string = e.currentTarget.getAttribute("href").slice(1);
@@ -26,7 +26,8 @@ navLinks.forEach((link) => {
 });
 
 // *** toggle drop down only in small screen sizes *** //
-if (window.innerWidth < 992) {
+const w: number = window.innerWidth;
+if (w < 992) {
   dropDownBtn.addEventListener("click", () => {
     dropDown.classList.toggle("toggle-drop-down");
   });
