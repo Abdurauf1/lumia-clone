@@ -6,17 +6,37 @@ const dropDown = document.querySelector("#dropDown") as HTMLUListElement;
 const deepDropDown = document.querySelector("#deepDropDown") as HTMLUListElement;
 const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
+const navLinks = document.querySelectorAll("nav ul li a");
+const navWrapper = document.querySelector("header") as HTMLHeadElement;
 
-// *** toggle drop down *** //
-dropDownBtn.addEventListener("click", () => {
-  dropDown.classList.toggle("toggle-drop-down");
+// *** link to section *** //
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e: any) => {
+    e.preventDefault();
+    const id: string = e.currentTarget.getAttribute("href").slice(1);
+    const section: any = document.getElementById(id);
+    const navWrapperHeight: number = navWrapper.getBoundingClientRect().height;
+    let position: number = section?.offsetTop - navWrapperHeight;
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: "smooth",
+    });
+  });
 });
 
-deepDropDownBtn.addEventListener("click", () => {
-  deepDropDown.classList.toggle("toggle-drop-down");
-});
+// *** toggle drop down only in small screen sizes *** //
+if (window.innerWidth < 992) {
+  dropDownBtn.addEventListener("click", () => {
+    dropDown.classList.toggle("toggle-drop-down");
+  });
 
-// *** open close navbar *** //
+  deepDropDownBtn.addEventListener("click", () => {
+    deepDropDown.classList.toggle("toggle-drop-down");
+  });
+}
+
+// *** open close navbar responsive *** //
 openNav.addEventListener("click", () => {
   nav.classList.add("nav-modal");
   openNav.classList.add("display-none");
