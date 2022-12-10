@@ -7,6 +7,7 @@ const deepDropDown = document.querySelector("#deepDropDown") as HTMLUListElement
 const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
 
+// *** toggle drop down *** //
 dropDownBtn.addEventListener("click", () => {
   dropDown.classList.toggle("toggle-drop-down");
 });
@@ -15,6 +16,7 @@ deepDropDownBtn.addEventListener("click", () => {
   deepDropDown.classList.toggle("toggle-drop-down");
 });
 
+// *** open close navbar *** //
 openNav.addEventListener("click", () => {
   nav.classList.add("nav-modal");
   openNav.classList.add("display-none");

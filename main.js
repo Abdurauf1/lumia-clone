@@ -7,12 +7,14 @@ const dropDown = document.querySelector("#dropDown");
 const deepDropDown = document.querySelector("#deepDropDown");
 const dropDownBtn = document.querySelector("#dropDownBtn");
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn");
+// *** toggle drop down *** //
 dropDownBtn.addEventListener("click", () => {
     dropDown.classList.toggle("toggle-drop-down");
 });
 deepDropDownBtn.addEventListener("click", () => {
     deepDropDown.classList.toggle("toggle-drop-down");
 });
+// *** open close navbar *** //
 openNav.addEventListener("click", () => {
     nav.classList.add("nav-modal");
     openNav.classList.add("display-none");
