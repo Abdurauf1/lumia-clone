@@ -155,7 +155,7 @@ li:nth-child(2):hover i {
 }
 
 .nav-link-active {
-    color: var(--blue-2);
+    color: var(--blue-2) !important;
 }
 
 /* navbar drop down */
