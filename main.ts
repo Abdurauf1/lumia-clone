@@ -8,34 +8,37 @@ const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
 const navLinks = document.querySelectorAll("nav ul li a");
 const navWrapper = document.querySelector("header") as HTMLHeadElement;
+const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
 
 // *** link to section *** //
-navLinks.forEach((link: any) => {
-  link.addEventListener("click", (e: any) => {
+navLinks.forEach((link) => {
+  goToSection(link);
+});
+
+goToSection(heroLink);
+
+function goToSection(e: any) {
+  e.addEventListener("click", (e: any) => {
     e.preventDefault();
-    const id: string = e.currentTarget.getAttribute("href").slice(1);
+    const id: string = e.target.getAttribute("href").slice(1);
     const section: any = document.getElementById(id);
     const navWrapperHeight: number = navWrapper.getBoundingClientRect().height;
-    let position: number = section?.offsetTop - navWrapperHeight;
+    let position: number = section.offsetTop - navWrapperHeight;
     window.scrollTo({
       left: 0,
       top: position,
       behavior: "smooth",
     });
   });
-});
+}
 
 // *** toggle drop down only in small screen sizes *** //
-const w: number = window.innerWidth;
-if (w < 992) {
-  dropDownBtn.addEventListener("click", () => {
-    dropDown.classList.toggle("toggle-drop-down");
-  });
-
-  deepDropDownBtn.addEventListener("click", () => {
-    deepDropDown.classList.toggle("toggle-drop-down");
-  });
-}
+dropDownBtn.addEventListener("click", () => {
+  dropDown.classList.toggle("toggle-drop-down");
+});
+deepDropDownBtn.addEventListener("click", () => {
+  deepDropDown.classList.toggle("toggle-drop-down");
+});
 
 // *** open close navbar responsive *** //
 openNav.addEventListener("click", () => {
