@@ -11,7 +11,7 @@ const navLinks = document.querySelectorAll("nav ul li a");
 const navWrapper = document.querySelector("header");
 const heroLink = document.querySelector(".header-btn");
 // ***************** link to section ***************** //
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
     goToSection(link);
 });
 goToSection(heroLink);
