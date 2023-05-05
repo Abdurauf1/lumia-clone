@@ -20,10 +20,10 @@ goToSection(heroLink);
 function goToSection(e: any) {
   e.addEventListener("click", (e: any) => {
     e.preventDefault();
-    const id: string = e.target.getAttribute("href")?.slice(1);
+    const id: string = e.target.getAttribute("href").slice(1);
     const section: any = document.getElementById(id);
     const navWrapperHeight: number = navWrapper.getBoundingClientRect().height;
-    let position: number = section?.offsetTop - navWrapperHeight;
+    let position: number = section.offsetTop - navWrapperHeight;
     window.scrollTo({
       left: 0,
       top: position,

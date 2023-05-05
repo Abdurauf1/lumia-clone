@@ -17,12 +17,11 @@ navLinks.forEach(link => {
 goToSection(heroLink);
 function goToSection(e) {
     e.addEventListener("click", (e) => {
-        var _a;
         e.preventDefault();
-        const id = (_a = e.target.getAttribute("href")) === null || _a === void 0 ? void 0 : _a.slice(1);
+        const id = e.target.getAttribute("href").slice(1);
         const section = document.getElementById(id);
         const navWrapperHeight = navWrapper.getBoundingClientRect().height;
-        let position = (section === null || section === void 0 ? void 0 : section.offsetTop) - navWrapperHeight;
+        let position = section.offsetTop - navWrapperHeight;
         window.scrollTo({
             left: 0,
             top: position,
