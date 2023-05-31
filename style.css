@@ -742,7 +742,18 @@ footer {
 
 .first-footer {
   width: 100%;
+  padding: 60px 0;
   background-color: var(--white);
+}
+
+.first-footer div h3 {
+  color: inherit;
+}
+
+.first-footer div div:nth-child(1) div p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #777777;
 }
 
 .last-footer {
@@ -751,12 +762,43 @@ footer {
 }
 
 .copyright {
-  font-size: 0.875rem;
+  font-size: 14px;
   margin: 0;
 }
 
 .credits {
-  font-size: 0.75rem;
+  font-size: 13px;
   margin: 0;
   padding-top: 5px;
+}
+
+.footer-icons li a {
+  width: 35px;
+  height: 35px;
+  padding: 7px 0;
+  background-color: var(--blue-2);
+  transition-duration: 0.3s;
+  margin-left: 5px;
+}
+
+.footer-icons li a:hover {
+  background-color: #5faee3;
+}
+
+.footer-icon {
+  font-size: 20px;
+  color: var(--white);
+}
+
+@media screen and (max-width: 770px) {
+  .footer-icons {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .credits {
+    text-align: center;
+  }
 }
