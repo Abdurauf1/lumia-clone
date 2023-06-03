@@ -1,7 +1,12 @@
 /* fonts */
 @font-face {
   font-family: open-sans;
-  src: url("./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\wght.ttf");
+  src: url(./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: open-sans-regular;
+  src: url(./assets/fonts/Open-sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
@@ -737,23 +742,86 @@ li:nth-child(2):hover i {
 /* footer */
 /* ---------------------------------------------------------- */
 footer {
-  width: 100vw;
+  width: 100%;
 }
 
 .first-footer {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
   background-color: var(--white);
 }
 
-.first-footer div h3 {
-  color: inherit;
+.footer-logo {
+  font-family: raleway-normal, sans-serif;
+  margin-bottom: 8px;
 }
 
-.first-footer div div:nth-child(1) div p {
+.footer-info {
   font-size: 14px;
-  margin-bottom: 0;
-  color: #777777;
+  line-height: 24px;
+  font-family: raleway-light, sans-serif;
+  color: var(--grey-4);
+}
+
+.footer-info b {
+  color: var(--grey-4);
+}
+
+.footer-title {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-list-item {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.footer-list-item i {
+  color: var(--blue-2);
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+  color: var(--grey-4);
+  transition-duration: 0.3s;
+  font-size: 14px;
+}
+
+.footer-list-item a:hover {
+  color: var(--blue-2);
+}
+
+.footer-subtitle {
+  font-size: 15px;
+}
+
+.subscribe-wrapper {
+  width: 100%;
+  height: 40px;
+}
+
+.subscribe-input {
+  outline: none;
+  border: 1px solid var(--blue-6);
+  padding: 0 10px;
+}
+
+.subscribe-btn {
+  color: var(--white);
+  background-color: var(--blue-2);
+  padding: 0 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--blue-4);
 }
 
 .last-footer {
@@ -763,12 +831,12 @@ footer {
 
 .copyright {
   font-size: 14px;
-  margin: 0;
+  font-family: open-sans-regular, sans-serif;
 }
 
 .credits {
   font-size: 13px;
-  margin: 0;
+  font-family: open-sans-regular, sans-serif;
   padding-top: 5px;
 }
 
@@ -778,11 +846,11 @@ footer {
   padding: 7px 0;
   background-color: var(--blue-2);
   transition-duration: 0.3s;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .footer-icons li a:hover {
-  background-color: #5faee3;
+  background-color: var(--blue-5);
 }
 
 .footer-icon {
@@ -791,14 +859,17 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-  .footer-icons {
-    margin-top: 20px;
-    padding: 0;
-  }
   .copyright {
     text-align: center;
   }
   .credits {
     text-align: center;
+  }
+  .footer-icons {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .footer-icons li a {
+    margin: 0 4px;
   }
 }
