@@ -1,47 +1,47 @@
 /* fonts */
 @font-face {
   font-family: open-sans;
-  src: url(./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\wght.ttf);
+  src: url("./assets/fonts/Open-sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
   font-family: open-sans-regular;
-  src: url(./assets/fonts/Open-sans/static/OpenSans/OpenSans-Regular.ttf);
+  src: url("./assets/fonts/Open-sans/static/OpenSans/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: raleway-bold;
-  src: url(./assets/fonts/Raleway/static/Raleway-Bold.ttf);
+  src: url("./assets/fonts/Raleway/static/Raleway-Bold.ttf");
 }
 
 @font-face {
   font-family: raleway-normal;
-  src: url(./assets/fonts/Raleway/static/Raleway-Medium.ttf);
+  src: url("./assets/fonts/Raleway/static/Raleway-Medium.ttf");
 }
 
 @font-face {
   font-family: raleway-semibold;
-  src: url(./assets/fonts/Raleway/static/Raleway-SemiBold.ttf);
+  src: url("./assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
 }
 
 @font-face {
   font-family: raleway-light;
-  src: url(./assets/fonts/Raleway/static/Raleway-Light.ttf);
+  src: url("./assets/fonts/Raleway/static/Raleway-Light.ttf");
 }
 
 @font-face {
   font-family: poppins-semibold;
-  src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: poppins-regular;
-  src: url(./assets/fonts/Poppins/Poppins-Regular.ttf);
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: poppins-medium;
-  src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
 }
 
 /* variables */
@@ -771,12 +771,14 @@ footer {
   padding-bottom: 12px;
   font-size: 16px;
   font-weight: bold;
+  font-family: raleway-normal, sans-serif;
 }
 
 .footer-list-item {
   display: flex;
-  padding: 10px 0;
+  padding: 9px 0;
   align-items: center;
+  margin-left: 3px;
 }
 
 .footer-list-item i {
@@ -798,26 +800,33 @@ footer {
 
 .footer-subtitle {
   font-size: 15px;
+  font-family: open-sans, sans-serif;
 }
 
 .subscribe-wrapper {
   width: 100%;
-  height: 40px;
+  height: 42px;
+  margin-top: 30px;
 }
 
 .subscribe-input {
+  width: calc(100% - 100px);
   outline: none;
   border: 1px solid var(--blue-6);
-  padding: 0 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 10px;
 }
 
 .subscribe-btn {
   color: var(--white);
   background-color: var(--blue-2);
-  padding: 0 20px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   transition-duration: 0.5s;
+  padding: 0 20px;
+  font-size: 16px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-btn:hover {
