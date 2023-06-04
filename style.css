@@ -739,6 +739,51 @@ li:nth-child(2):hover i {
 }
 
 /* ---------------------------------------------------------- */
+/* contact */
+/* ---------------------------------------------------------- */
+.contact {
+  background-color: var(--grey-16);
+  padding: 60px 0;
+}
+
+.location-info {
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.location-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--grey-15);
+  transition-duration: 0.3s;
+  float: left;
+}
+
+.location-icon i {
+  font-size: 20px;
+  color: var(--blue-2);
+}
+
+.location-content {
+  padding-left: 15px;
+}
+
+.location-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--grey-1);
+  font-family: raleway-normal;
+}
+
+.location-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--grey-3);
+}
+
+/* ---------------------------------------------------------- */
 /* footer */
 /* ---------------------------------------------------------- */
 footer {
