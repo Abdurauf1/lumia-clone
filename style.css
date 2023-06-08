@@ -738,6 +738,8 @@ li:nth-child(2):hover i {
   font-size: 1.25rem;
 }
 
+
+
 /* ---------------------------------------------------------- */
 /* contact */
 /* ---------------------------------------------------------- */
@@ -752,16 +754,25 @@ li:nth-child(2):hover i {
   border-radius: 4px;
 }
 
+.location-info div:hover .location-icon i {
+  color: var(--white);
+}
+
+.location-info div:hover .location-icon {
+  background-color: var(--blue-2);
+}
+
 .location-icon {
   width: 44px;
   height: 44px;
   background-color: var(--grey-15);
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .location-icon i {
   font-size: 20px;
   color: var(--blue-2);
+  transition-duration: 0.5s;
 }
 
 .location-content {
