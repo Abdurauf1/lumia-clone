@@ -476,15 +476,6 @@ li:nth-child(2):hover i {
   padding: 0.625rem 0;
 }
 
-.about-us-img {
-  width: 49%;
-  height: 10%;
-}
-
-.about-us {
-  width: 49%;
-}
-
 .about-us-title {
   font-family: raleway-semibold, sans-serif;
 }
