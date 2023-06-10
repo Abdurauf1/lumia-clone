@@ -634,13 +634,12 @@ li:nth-child(2):hover i {
 
 /* cards */
 .portfolio-cards-wrapper {
-  height: 71.25rem;
   margin-top: 2.5rem;
 }
 
 .portfolio-card {
-  width: 31.9%;
-  height: 20.625rem !important;
+  height: 330px;
+  margin-bottom: 30px;
   box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
   overflow: hidden;
   position: relative;
@@ -736,6 +735,14 @@ li:nth-child(2):hover i {
   transition-duration: 0.3s;
   color: var(--grey-1);
   font-size: 1.25rem;
+}
+
+/* ---------------------------------------------------------- */
+/* testimonials */
+/* ---------------------------------------------------------- */
+.testimonials {
+  background-color: var(--grey-16);
+  padding: 60px 0;
 }
 
 /* ---------------------------------------------------------- */
