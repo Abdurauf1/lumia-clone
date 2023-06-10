@@ -6,7 +6,7 @@ const dropDown = document.querySelector("#dropDown") as HTMLUListElement;
 const deepDropDown = document.querySelector("#deepDropDown") as HTMLUListElement;
 const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinks = document.querySelectorAll("nav ul li a") as NodeListOf<Element>;
 const navWrapper = document.querySelector("header") as HTMLHeadElement;
 const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
 
@@ -36,6 +36,7 @@ function goToSection(e: any) {
 dropDownBtn.addEventListener("click", () => {
   dropDown.classList.toggle("toggle-drop-down");
 });
+
 deepDropDownBtn.addEventListener("click", () => {
   deepDropDown.classList.toggle("toggle-drop-down");
 });
