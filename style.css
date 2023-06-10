@@ -567,15 +567,11 @@ li:nth-child(2):hover i {
   padding: 3.75rem 0;
 }
 
-.services-card-wrapper {
-  height: 35rem;
-}
-
 .services-card {
-  height: 10rem;
   border-radius: 0.5rem;
   padding: 1.875rem !important;
   transition-duration: 0.5s;
+  background-color: var(--white);
 }
 
 .services-card:hover {
@@ -588,7 +584,11 @@ li:nth-child(2):hover i {
 
 .services-card i {
   color: var(--blue-2);
-  margin-right: 2rem;
+  float: left;
+}
+
+.services-card div {
+  margin-left: 70px;
 }
 
 .services-card div h5 {
@@ -611,7 +611,7 @@ li:nth-child(2):hover i {
 /* portfolio */
 /* ---------------------------------------------------------- */
 .portfolio {
-  padding: 3.75rem 0;
+  padding: 60px 0;
 }
 
 /* buttons */
