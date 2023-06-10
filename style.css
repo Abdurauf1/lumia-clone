@@ -355,7 +355,7 @@ li:nth-child(2):hover i {
 }
 
 .header-title {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .header-title,
@@ -371,23 +371,36 @@ li:nth-child(2):hover i {
 .header-text {
   font-family: raleway-normal, sans-serif;
   color: var(--grey-11);
+  margin-bottom: 30px;
+  font-size: 24px;
 }
 
 .header-btn {
-  color: var(--white);
-  transition-duration: 0.5s !important;
-  background-color: var(--blue-2) !important;
-  font-family: poppins-regular, sans-serif !important;
-  font-size: 0.8rem !important;
+  font-family: poppins-regular, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 2px;
-  height: 2.7rem;
-  width: 10rem;
-  border-radius: 5px !important;
-  border: none !important;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+  background-color: var(--blue-2);
+  display: inline-block;
 }
 
 .header-btn:hover {
-  background-color: var(--blue-3) !important;
+  background-color: var(--blue-3);
+}
+
+@media screen and (max-width: 998px) {
+  .hero {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header-text {
+    font-size: 18px;
+  }
 }
 
 /* ---------------------------------------------------------- */
