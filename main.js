@@ -29,6 +29,23 @@ function goToSection(e) {
         });
     });
 }
+// ***************** active nav links on scroll ***************** //
+const sections = document.querySelectorAll("section");
+window.onscroll = () => {
+    sections.forEach(section => {
+        const top = window.scrollY;
+        const offset = section.offsetTop - navWrapper.clientHeight;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach((navLink) => {
+                var _a;
+                navLink.classList.remove("nav-link-active");
+                (_a = document.querySelector("header nav ul li a[href*=" + id + "]")) === null || _a === void 0 ? void 0 : _a.classList.add("nav-link-active");
+            });
+        }
+    });
+};
 // ***************** toggle drop down only in small screen sizes ***************** //
 dropDownBtn.addEventListener("click", () => {
     dropDown.classList.toggle("toggle-drop-down");
