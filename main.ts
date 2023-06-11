@@ -20,7 +20,13 @@ goToSection(heroLink);
 function goToSection(e: any) {
   e.addEventListener("click", (e: any) => {
     e.preventDefault();
+    if (!e.target.getAttribute("href")) {
+      return;
+    }
     const id: string = e.target.getAttribute("href").slice(1);
+    if (id.length < 1) {
+      return;
+    }
     const section: any = document.getElementById(id);
     const navWrapperHeight: number = navWrapper.getBoundingClientRect().height;
     let position: number = section.offsetTop - navWrapperHeight;
