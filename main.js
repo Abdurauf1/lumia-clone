@@ -33,6 +33,11 @@ function goToSection(e) {
             top: position,
             behavior: "smooth",
         });
+        if (window.innerWidth <= 991) {
+            nav.classList.remove("nav-modal");
+            openNav.classList.remove("display-none");
+            closeNav.classList.remove("display-block");
+        }
     });
 }
 // ***************** active nav links on scroll ***************** //
