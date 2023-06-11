@@ -6,7 +6,7 @@ const dropDown = document.querySelector("#dropDown") as HTMLUListElement;
 const deepDropDown = document.querySelector("#deepDropDown") as HTMLUListElement;
 const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
 const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
-const navLinks = document.querySelectorAll("nav ul li a") as NodeListOf<Element>;
+const navLinks = document.querySelectorAll("nav ul li a") as NodeListOf<HTMLAnchorElement>;
 const navWrapper = document.querySelector("header") as HTMLHeadElement;
 const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
 
@@ -30,6 +30,25 @@ function goToSection(e: any) {
       behavior: "smooth",
     });
   });
+}
+
+// ***************** active nav links on scroll ***************** //
+const sections = document.querySelectorAll("section") as NodeListOf<HTMLElement>
+
+window.onscroll = () => {
+  sections.forEach(section => {
+    const top: number = window.scrollY;
+    const offset: number = section.offsetTop - navWrapper.clientHeight;
+    const height: number = section.offsetHeight;
+    const id: string | null = section.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((navLink: any) => {
+        navLink.classList.remove("nav-link-active");
+        document.querySelector("header nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active")
+      })
+    }
+  })
 }
 
 // ***************** toggle drop down only in small screen sizes ***************** //
