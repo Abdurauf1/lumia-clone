@@ -74,4 +74,36 @@ closeNav.addEventListener("click", () => {
     nav.classList.remove("nav-modal");
     openNav.classList.remove("display-none");
     closeNav.classList.remove("display-block");
+    dropDown.classList.remove("toggle-drop-down");
+});
+// ***************** fill skills progress bar ***************** //
+window.onscroll = () => {
+    const skillsSection = document.querySelector(".skills-wrapper");
+    const progressBars = document.querySelectorAll(".progress-bar");
+    const scrolled = window.scrollY;
+    const skillsSecPos = skillsSection.offsetTop;
+    if (scrolled == skillsSecPos) {
+        progressBars[0].style.width = "100%";
+        progressBars[1].style.width = "90%";
+        progressBars[2].style.width = "75%";
+        progressBars[3].style.width = "80%";
+        progressBars[4].style.width = "90%";
+        progressBars[5].style.width = "55%";
+    }
+};
+// HTML 100%
+// CSS 90%
+// JAVASCRIPT 75%
+// PHP 80%
+// WORDPRESS/CMS 90%
+// PHOTOSHOP 55%
+window.addEventListener("scroll", () => {
+    const ourWorkSection = document.querySelector(".our-work-wrapper");
+    const scrolled = window.scrollY;
+    const ourWorkSecPos = ourWorkSection.offsetTop;
+    if (scrolled == ourWorkSecPos) {
+        for (let i = 0; i <= 6; i++) {
+            console.log(i);
+        }
+    }
 });
