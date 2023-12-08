@@ -86,16 +86,16 @@ closeNav.addEventListener("click", () => {
 });
 
 // ***************** fill skills progress bar ***************** //
-window.onscroll = () => {
-  const skillsSection = document.querySelector(".skills-wrapper") as HTMLDivElement;
-  const progressBars = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>
-  const scrolled: number = window.scrollY;
-  const skillsSecTop: number = skillsSection.offsetTop;
+// window.onscroll = () => {
+//   const skillsSection = document.querySelector(".skills-wrapper") as HTMLDivElement;
+//   const progressBars = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>
+//   const scrolled: number = window.scrollY;
+//   const skillsSecTop: number = skillsSection.offsetTop;
 
-  if (scrolled >= skillsSecTop) {
-    progressBars[0].style.animationName = "fill-progress-bar"
-  }
-}
+//   if (scrolled >= skillsSecTop) {
+//     progressBars[0].style.animationName = "fill-progress-bar"
+//   }
+// }
 
 // HTML 100%
 // CSS 90%
