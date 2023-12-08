@@ -539,6 +539,20 @@ li:nth-child(2):hover i {
   background-color: var(--blue-5);
 }
 
+.skill-container .progress .progress-bar {
+  animation-duration: 0.5s;
+  animation-iteration-count: unset;
+}
+
+@keyframes fill-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /* about our work */
 .our-work-wrapper {
   padding: 1.1rem 0 2.5rem 0;

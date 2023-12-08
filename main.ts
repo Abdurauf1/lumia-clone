@@ -90,15 +90,10 @@ window.onscroll = () => {
   const skillsSection = document.querySelector(".skills-wrapper") as HTMLDivElement;
   const progressBars = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>
   const scrolled: number = window.scrollY;
-  const skillsSecPos: number = skillsSection.offsetTop;
+  const skillsSecTop: number = skillsSection.offsetTop;
 
-  if (scrolled == skillsSecPos) {
-    progressBars[0].style.width = "100%";
-    progressBars[1].style.width = "90%";
-    progressBars[2].style.width = "75%";
-    progressBars[3].style.width = "80%";
-    progressBars[4].style.width = "90%";
-    progressBars[5].style.width = "55%";
+  if (scrolled >= skillsSecTop) {
+    progressBars[0].style.animationName = "fill-progress-bar"
   }
 }
 
@@ -109,14 +104,14 @@ window.onscroll = () => {
 // WORDPRESS/CMS 90%
 // PHOTOSHOP 55%
 
-window.addEventListener("scroll", () => {
-  const ourWorkSection = document.querySelector(".our-work-wrapper") as HTMLDivElement;
-  const scrolled: number = window.scrollY;
-  const ourWorkSecPos: number = ourWorkSection.offsetTop;
+// window.addEventListener("scroll", () => {
+//   const ourWorkSection = document.querySelector(".our-work-wrapper") as HTMLDivElement;
+//   const scrolled: number = window.scrollY;
+//   const ourWorkSecPos: number = ourWorkSection.offsetTop;
 
-  if (scrolled == ourWorkSecPos) {
-    for (let i = 0; i <= 6; i++) {
-      console.log(i);
-    }
-  }
-})
+//   if (scrolled == ourWorkSecPos) {
+//     for (let i = 0; i <= 6; i++) {
+//       console.log(i);
+//     }
+//   }
+// })
