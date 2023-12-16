@@ -11,13 +11,13 @@ const navWrapper = document.querySelector("header") as HTMLHeadElement;
 const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
 
 // ***************** link to section ***************** //
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   goToSection(link);
 });
 
 goToSection(heroLink);
 
-function goToSection(e: any) {
+function goToSection(e: HTMLAnchorElement) {
   e.addEventListener("click", (e: any) => {
     e.preventDefault();
     if (!e.target.getAttribute("href")) {
@@ -47,14 +47,14 @@ function goToSection(e: any) {
 const sections = document.querySelectorAll("section") as NodeListOf<HTMLElement>
 
 window.onscroll = () => {
+  const top: number = window.scrollY;
   sections.forEach(section => {
-    const top: number = window.scrollY;
     const offset: number = section.offsetTop - navWrapper.clientHeight;
     const height: number = section.offsetHeight;
     const id: string | null = section.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((navLink: any) => {
+      navLinks.forEach((navLink: HTMLAnchorElement) => {
         navLink.classList.remove("nav-link-active");
         document.querySelector("header nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active")
       })
@@ -84,34 +84,3 @@ closeNav.addEventListener("click", () => {
   closeNav.classList.remove("display-block");
   dropDown.classList.remove("toggle-drop-down")
 });
-
-// ***************** fill skills progress bar ***************** //
-// window.onscroll = () => {
-//   const skillsSection = document.querySelector(".skills-wrapper") as HTMLDivElement;
-//   const progressBars = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>
-//   const scrolled: number = window.scrollY;
-//   const skillsSecTop: number = skillsSection.offsetTop;
-
-//   if (scrolled >= skillsSecTop) {
-//     progressBars[0].style.animationName = "fill-progress-bar"
-//   }
-// }
-
-// HTML 100%
-// CSS 90%
-// JAVASCRIPT 75%
-// PHP 80%
-// WORDPRESS/CMS 90%
-// PHOTOSHOP 55%
-
-// window.addEventListener("scroll", () => {
-//   const ourWorkSection = document.querySelector(".our-work-wrapper") as HTMLDivElement;
-//   const scrolled: number = window.scrollY;
-//   const ourWorkSecPos: number = ourWorkSection.offsetTop;
-
-//   if (scrolled == ourWorkSecPos) {
-//     for (let i = 0; i <= 6; i++) {
-//       console.log(i);
-//     }
-//   }
-// })

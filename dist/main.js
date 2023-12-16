@@ -11,7 +11,7 @@ const navLinks = document.querySelectorAll("nav ul li a");
 const navWrapper = document.querySelector("header");
 const heroLink = document.querySelector(".header-btn");
 // ***************** link to section ***************** //
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
     goToSection(link);
 });
 goToSection(heroLink);
@@ -43,8 +43,8 @@ function goToSection(e) {
 // ***************** active nav links on scroll ***************** //
 const sections = document.querySelectorAll("section");
 window.onscroll = () => {
+    const top = window.scrollY;
     sections.forEach(section => {
-        const top = window.scrollY;
         const offset = section.offsetTop - navWrapper.clientHeight;
         const height = section.offsetHeight;
         const id = section.getAttribute("id");
@@ -76,29 +76,3 @@ closeNav.addEventListener("click", () => {
     closeNav.classList.remove("display-block");
     dropDown.classList.remove("toggle-drop-down");
 });
-// ***************** fill skills progress bar ***************** //
-// window.onscroll = () => {
-//   const skillsSection = document.querySelector(".skills-wrapper") as HTMLDivElement;
-//   const progressBars = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>
-//   const scrolled: number = window.scrollY;
-//   const skillsSecTop: number = skillsSection.offsetTop;
-//   if (scrolled >= skillsSecTop) {
-//     progressBars[0].style.animationName = "fill-progress-bar"
-//   }
-// }
-// HTML 100%
-// CSS 90%
-// JAVASCRIPT 75%
-// PHP 80%
-// WORDPRESS/CMS 90%
-// PHOTOSHOP 55%
-// window.addEventListener("scroll", () => {
-//   const ourWorkSection = document.querySelector(".our-work-wrapper") as HTMLDivElement;
-//   const scrolled: number = window.scrollY;
-//   const ourWorkSecPos: number = ourWorkSection.offsetTop;
-//   if (scrolled == ourWorkSecPos) {
-//     for (let i = 0; i <= 6; i++) {
-//       console.log(i);
-//     }
-//   }
-// })
