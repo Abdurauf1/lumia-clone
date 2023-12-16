@@ -42,7 +42,7 @@ function goToSection(e) {
 }
 // ***************** active nav links on scroll ***************** //
 const sections = document.querySelectorAll("section");
-window.onscroll = () => {
+function onScroll() {
     const top = window.scrollY;
     sections.forEach(section => {
         const offset = section.offsetTop - navWrapper.clientHeight;
@@ -52,11 +52,12 @@ window.onscroll = () => {
             navLinks.forEach((navLink) => {
                 var _a;
                 navLink.classList.remove("nav-link-active");
-                (_a = document.querySelector("header nav ul li a[href*=" + id + "]")) === null || _a === void 0 ? void 0 : _a.classList.add("nav-link-active");
+                (_a = document.querySelector("header div nav ul li a[href*=" + id + "]")) === null || _a === void 0 ? void 0 : _a.classList.add("nav-link-active");
             });
         }
     });
-};
+}
+window.addEventListener("scroll", onScroll);
 // ***************** toggle drop down only in small screen sizes ***************** //
 dropDownBtn.addEventListener("click", () => {
     dropDown.classList.toggle("toggle-drop-down");

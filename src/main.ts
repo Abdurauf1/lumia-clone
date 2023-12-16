@@ -11,7 +11,7 @@ const navWrapper = document.querySelector("header") as HTMLHeadElement;
 const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
 
 // ***************** link to section ***************** //
-navLinks.forEach((link) => {
+navLinks.forEach((link: HTMLAnchorElement) => {
   goToSection(link);
 });
 
@@ -46,7 +46,7 @@ function goToSection(e: HTMLAnchorElement) {
 // ***************** active nav links on scroll ***************** //
 const sections = document.querySelectorAll("section") as NodeListOf<HTMLElement>
 
-window.onscroll = () => {
+function onScroll() {
   const top: number = window.scrollY;
   sections.forEach(section => {
     const offset: number = section.offsetTop - navWrapper.clientHeight;
@@ -56,11 +56,13 @@ window.onscroll = () => {
     if (top >= offset && top < offset + height) {
       navLinks.forEach((navLink: HTMLAnchorElement) => {
         navLink.classList.remove("nav-link-active");
-        document.querySelector("header nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active")
+        document.querySelector("header div nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active")
       })
     }
   })
 }
+
+window.addEventListener("scroll", onScroll)
 
 // ***************** toggle drop down only in small screen sizes ***************** //
 dropDownBtn.addEventListener("click", () => {
