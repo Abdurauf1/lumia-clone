@@ -77,3 +77,44 @@ closeNav.addEventListener("click", () => {
     closeNav.classList.remove("display-block");
     dropDown.classList.remove("toggle-drop-down");
 });
+// ***************** fill progress bar ***************** //
+const progressBar = document.querySelectorAll(".progress-bar");
+const fillProgressBars = () => {
+    const top = window.scrollY;
+    if (top >= progressBar[0].offsetTop - 400) {
+        progressBar[0].style.animationName = "html-progress-bar";
+        progressBar[1].style.animationName = "css-progress-bar";
+        progressBar[2].style.animationName = "js-progress-bar";
+        progressBar[3].style.animationName = "php-progress-bar";
+        progressBar[4].style.animationName = "cms-progress-bar";
+        progressBar[5].style.animationName = "ps-progress-bar";
+    }
+};
+document.addEventListener("DOMContentLoaded", fillProgressBars);
+document.addEventListener("scroll", fillProgressBars);
+// ***************** count numbers animation ***************** //
+const countableNumbers = document.querySelectorAll(".countable-number");
+const animateValue = (htmlElement, start, end, duration) => {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp)
+            startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const result = Math.floor(progress * (end - start) + start).toString();
+        htmlElement.innerHTML = result;
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+};
+const countNumbers = () => {
+    if (window.scrollY >= countableNumbers[0].offsetTop - 600) {
+        animateValue(countableNumbers[0], 0, 232, 1500);
+        animateValue(countableNumbers[1], 0, 521, 1500);
+        animateValue(countableNumbers[2], 0, 1463, 1500);
+        animateValue(countableNumbers[3], 0, 15, 1500);
+    }
+};
+document.addEventListener("DOMContentLoaded", countNumbers);
+document.addEventListener("scroll", countNumbers);

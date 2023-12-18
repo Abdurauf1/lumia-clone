@@ -540,16 +540,59 @@ li:nth-child(2):hover i {
 }
 
 .skill-container .progress .progress-bar {
-  animation-duration: 0.5s;
-  animation-iteration-count: unset;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-@keyframes fill-progress-bar {
+@keyframes html-progress-bar {
   from {
     width: 0%;
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes css-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes js-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes php-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes cms-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes ps-progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 55%;
   }
 }
 
