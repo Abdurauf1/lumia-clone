@@ -56,7 +56,7 @@ function onScroll() {
     if (top >= offset && top < offset + height) {
       navLinks.forEach((navLink: HTMLAnchorElement) => {
         navLink.classList.remove("nav-link-active");
-        document.querySelector("header div nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active")
+        document.querySelector("header div nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active");
       })
     }
   })
@@ -110,7 +110,7 @@ document.addEventListener("scroll", fillProgressBars);
 // ***************** count numbers animation ***************** //
 const countableNumbers = document.querySelectorAll(".countable-number") as NodeListOf<HTMLHeadingElement>
 
-const animateValue = (htmlElement: HTMLDivElement, start: number, end: number, duration: number) => {
+const animateValue = (htmlElement: HTMLHeadingElement, start: number, end: number, duration: number) => {
   let startTimestamp: null | number = null;
 
   const step = (timestamp: number) => {
@@ -127,12 +127,15 @@ const animateValue = (htmlElement: HTMLDivElement, start: number, end: number, d
 
 const countNumbers = () => {
   if (window.scrollY >= countableNumbers[0].offsetTop - 600) {
-    animateValue(countableNumbers[0], 0, 232, 1500);
-    animateValue(countableNumbers[1], 0, 521, 1500);
-    animateValue(countableNumbers[2], 0, 1463, 1500);
-    animateValue(countableNumbers[3], 0, 15, 1500);
+    animateValue(countableNumbers[0], 0, 232, 1600);
+    animateValue(countableNumbers[1], 0, 521, 1600);
+    animateValue(countableNumbers[2], 0, 1463, 1600);
+    animateValue(countableNumbers[3], 0, 15, 1600);
+
+    document.removeEventListener("scroll", countNumbers)
   }
 }
 
-document.addEventListener("DOMContentLoaded", countNumbers);
 document.addEventListener("scroll", countNumbers);
+
+// ***************** card filters ***************** //

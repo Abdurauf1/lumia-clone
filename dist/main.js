@@ -110,11 +110,12 @@ const animateValue = (htmlElement, start, end, duration) => {
 };
 const countNumbers = () => {
     if (window.scrollY >= countableNumbers[0].offsetTop - 600) {
-        animateValue(countableNumbers[0], 0, 232, 1500);
-        animateValue(countableNumbers[1], 0, 521, 1500);
-        animateValue(countableNumbers[2], 0, 1463, 1500);
-        animateValue(countableNumbers[3], 0, 15, 1500);
+        animateValue(countableNumbers[0], 0, 232, 1600);
+        animateValue(countableNumbers[1], 0, 521, 1600);
+        animateValue(countableNumbers[2], 0, 1463, 1600);
+        animateValue(countableNumbers[3], 0, 15, 1600);
+        document.removeEventListener("scroll", countNumbers);
     }
 };
-document.addEventListener("DOMContentLoaded", countNumbers);
 document.addEventListener("scroll", countNumbers);
+// ***************** card filters ***************** //
