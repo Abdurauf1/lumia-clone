@@ -139,3 +139,21 @@ const countNumbers = () => {
 document.addEventListener("scroll", countNumbers);
 
 // ***************** card filters ***************** //
+const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button") as NodeListOf<HTMLButtonElement>
+const portfolioCards = document.querySelectorAll(".portfolio-card-parent") as NodeListOf<HTMLDivElement>
+
+const filterCards = (e: MouseEvent) => {
+  document.querySelector(".card-btn-active")?.classList.remove("card-btn-active")
+  const targetElement: HTMLElement = e.target as HTMLElement;
+  targetElement.classList.add("card-btn-active");
+
+  portfolioCards.forEach((card: HTMLDivElement) => {
+    card.classList.add("hide-card");
+
+    if (card.dataset.name === targetElement.dataset.name || targetElement.dataset.name === "all") {
+      card.classList.remove("hide-card");
+    }
+  })
+}
+
+cardFilterButtons.forEach((button: HTMLButtonElement) => button.addEventListener("click", filterCards))

@@ -119,3 +119,18 @@ const countNumbers = () => {
 };
 document.addEventListener("scroll", countNumbers);
 // ***************** card filters ***************** //
+const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button");
+const portfolioCards = document.querySelectorAll(".portfolio-card-parent");
+const filterCards = (e) => {
+    var _a;
+    (_a = document.querySelector(".card-btn-active")) === null || _a === void 0 ? void 0 : _a.classList.remove("card-btn-active");
+    const targetElement = e.target;
+    targetElement.classList.add("card-btn-active");
+    portfolioCards.forEach((card) => {
+        card.classList.add("hide-card");
+        if (card.dataset.name === targetElement.dataset.name || targetElement.dataset.name === "all") {
+            card.classList.remove("hide-card");
+        }
+    });
+};
+cardFilterButtons.forEach((button) => button.addEventListener("click", filterCards));

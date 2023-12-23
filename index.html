@@ -444,14 +444,14 @@
                 <p class="text-center sec-one-text">Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
                 <!-- buttons wrapper -->
                 <div class="mx-auto d-flex justify-content-between buttons-wrapper">
-                    <button class="bg-white border-0 text-uppercase">all</button>
-                    <button class="bg-white border-0 text-uppercase">app</button>
-                    <button class="bg-white border-0 text-uppercase">card</button>
-                    <button class="bg-white border-0 text-uppercase">web</button>
+                    <button class="bg-white border-0 text-uppercase card-btn-active" data-name="all">all</button>
+                    <button class="bg-white border-0 text-uppercase" data-name="app">app</button>
+                    <button class="bg-white border-0 text-uppercase" data-name="card">card</button>
+                    <button class="bg-white border-0 text-uppercase" data-name="web">web</button>
                 </div>
                 <!-- cards wrapper -->
                 <div class="row portfolio-cards-wrapper">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -474,7 +474,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -497,7 +497,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -520,7 +520,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -543,7 +543,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -566,7 +566,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -588,7 +588,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -611,7 +611,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -634,7 +634,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -886,7 +886,7 @@
                         <p class="footer-subtitle">Tamen quem nulla quae legam multos aute sint culpa legam noster magna
                         </p>
                         <form action class="d-flex subscribe-wrapper">
-                            <input type="text" class="subscribe-input">
+                            <input type="text" class="subscribe-input" required>
                             <button type="submit" class="border-0 subscribe-btn">Subscribe</button>
                         </form>
                     </div>

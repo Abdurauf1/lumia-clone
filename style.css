@@ -696,6 +696,11 @@ li:nth-child(2):hover i {
   background-color: var(--blue-2) !important;
 }
 
+.card-btn-active {
+  color: var(--white);
+  background-color: var(--blue-2) !important;
+}
+
 /* cards */
 .portfolio-cards-wrapper {
   margin-top: 2.5rem;
@@ -736,6 +741,10 @@ li:nth-child(2):hover i {
 .card-info p {
   color: var(--grey-10);
   font-size: 0.875rem;
+}
+
+.hide-card {
+  display: none;
 }
 
 /* onhover card details */
