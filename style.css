@@ -829,6 +829,40 @@ li:nth-child(2):hover i {
   padding: 60px 0;
 }
 
+.testimonial-item {
+  width: 358px;
+  padding: 30px 30px 0 30px;
+  margin: 30px 15px;
+  min-height: 350px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.testimonial-item p {
+  margin: 0 auto 15px auto;
+}
+
+.testimonial-item img {
+  width: 90px;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.testimonial-item h3 {
+  font-size: 18px;
+  margin: 10px 0 5px 0;
+  color: var(--black-2);
+  font-family: raleway-bold, sans-serif;
+}
+
+.testimonial-item h4 {
+  font-size: 14px;
+  color: var(--grey-6);
+  margin: 0;
+  font-family: raleway-bold, sans-serif;
+  text-align: center;
+}
+
 /* ---------------------------------------------------------- */
 /* team */
 /* ---------------------------------------------------------- */

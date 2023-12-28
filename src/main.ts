@@ -183,6 +183,55 @@ cardFilterButtons[0].addEventListener("click", (e: MouseEvent) => {
   })
 })
 
+// ***************** testimonials ***************** //
+interface TestimonialsData {
+  description: string,
+  img_src: string,
+  name: string,
+  job: string
+}
+
+const testimonialsData: TestimonialsData[] = [
+  {
+    description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.Accusantium quam, ultricies eget id, aliquam eget nibh et.Maecen aliquam, risus at semper.",
+    img_src: "../assets/img/testimonials/testimonials-1.jpg",
+    name: "Saul Goodman",
+    job: "Ceo & Founder"
+  },
+  {
+    description: "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.",
+    img_src: "../assets/img/testimonials/testimonials-2.jpg",
+    name: "Sara Wilsson",
+    job: "Designer"
+  },
+  {
+    description: "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.",
+    img_src: "../assets/img/testimonials/testimonials-3.jpg",
+    name: "Jena Karlis",
+    job: "Store Owner"
+  },
+]
+
+const cardWrapper = document.querySelector(".testimonial-cards") as HTMLDivElement;
+cardWrapper.innerHTML = `
+  ${testimonialsData.map((user: TestimonialsData) => {
+  const { description, img_src, name, job } = user;
+  return (
+    `
+      <div class="testimonial-item bg-white overflow-hidden">
+        <p class="fst-italic">
+            ${description}
+        </p>
+        <img class="rounded-circle" src="${img_src}"
+          alt="testimonial-img">
+        <h3>${name}</h3>
+        <h4>${job}</h4>
+      </div>
+    `
+  )
+})}
+`;
+
 // ***************** go up button ***************** //
 const upBtn = document.querySelector(".up-btn");
 
