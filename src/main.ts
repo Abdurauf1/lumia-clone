@@ -142,18 +142,51 @@ document.addEventListener("scroll", countNumbers);
 const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button") as NodeListOf<HTMLButtonElement>
 const portfolioCards = document.querySelectorAll(".portfolio-card-parent") as NodeListOf<HTMLDivElement>
 
-const filterCards = (e: MouseEvent) => {
-  document.querySelector(".card-btn-active")?.classList.remove("card-btn-active")
-  const targetElement: HTMLElement = e.target as HTMLElement;
-  targetElement.classList.add("card-btn-active");
+for (let i = 1; i < cardFilterButtons.length; i++) {
+  cardFilterButtons[i].addEventListener("click", filterImg);
+}
+
+function setActiveBtn(e: MouseEvent) {
+  const currentTarget = e.target as HTMLElement;
+
+  cardFilterButtons.forEach(btn => {
+    btn.classList.remove("card-btn-active");
+  })
+
+  currentTarget.classList.add("card-btn-active")
+}
+
+function filterImg(e: MouseEvent) {
+  const currentTarget = e.target as HTMLElement;
+
+  setActiveBtn(e);
 
   portfolioCards.forEach((card: HTMLDivElement) => {
-    card.classList.add("hide-card");
+    card.classList.remove("hide-card")
+    card.classList.add("show-card")
 
-    if (card.dataset.name === targetElement.dataset.name || targetElement.dataset.name === "all") {
-      card.classList.remove("hide-card");
+    const imgType: string | undefined = card.dataset.name
+    const btnType: string | undefined = currentTarget.dataset.name
+
+    if (imgType !== btnType) {
+      card.classList.remove("show-card")
+      card.classList.add("hide-card")
     }
   })
 }
 
-cardFilterButtons.forEach((button: HTMLButtonElement) => button.addEventListener("click", filterCards))
+cardFilterButtons[0].addEventListener("click", (e: MouseEvent) => {
+  setActiveBtn(e)
+  portfolioCards.forEach((card: HTMLDivElement) => {
+    card.classList.remove("hide-card");
+    card.classList.add("show-card")
+  })
+})
+
+// ***************** go up button ***************** //
+const upBtn = document.querySelector(".up-btn");
+
+document.addEventListener("scroll", () => window.scrollY > 100 ? upBtn?.classList.remove("up-btn-hidden") : upBtn?.classList.add("up-btn-hidden")
+)
+
+upBtn?.addEventListener("click", () => window.scrollTo(0, 0))

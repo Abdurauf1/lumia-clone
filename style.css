@@ -704,6 +704,7 @@ li:nth-child(2):hover i {
 /* cards */
 .portfolio-cards-wrapper {
   margin-top: 2.5rem;
+  position: relative;
 }
 
 .portfolio-card {
@@ -744,7 +745,17 @@ li:nth-child(2):hover i {
 }
 
 .hide-card {
-  display: none;
+  width: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition-duration: 0.5s;
+}
+
+.show-card {
+  width: 380px;
+  opacity: 1;
+  transform: scale(1);
+  transition-duration: 0.5s;
 }
 
 /* onhover card details */
@@ -1128,4 +1139,28 @@ footer {
   .footer-icons li a {
     margin: 0 4px;
   }
+}
+
+.up-btn {
+  width: 40px;
+  height: 40px;
+  z-index: 990;
+  border-radius: 4px;
+  background-color: var(--blue-2);
+  right: 15px;
+  bottom: 15px;
+  transition-duration: 0.3s;
+}
+
+.up-btn:hover {
+  background-color: var(--blue-4);
+}
+
+.up-btn i {
+  font-size: 28px;
+}
+
+.up-btn-hidden {
+  visibility: hidden;
+  opacity: 0;
 }

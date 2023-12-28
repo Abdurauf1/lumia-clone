@@ -121,16 +121,38 @@ document.addEventListener("scroll", countNumbers);
 // ***************** card filters ***************** //
 const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button");
 const portfolioCards = document.querySelectorAll(".portfolio-card-parent");
-const filterCards = (e) => {
-    var _a;
-    (_a = document.querySelector(".card-btn-active")) === null || _a === void 0 ? void 0 : _a.classList.remove("card-btn-active");
-    const targetElement = e.target;
-    targetElement.classList.add("card-btn-active");
+for (let i = 1; i < cardFilterButtons.length; i++) {
+    cardFilterButtons[i].addEventListener("click", filterImg);
+}
+function setActiveBtn(e) {
+    const currentTarget = e.target;
+    cardFilterButtons.forEach(btn => {
+        btn.classList.remove("card-btn-active");
+    });
+    currentTarget.classList.add("card-btn-active");
+}
+function filterImg(e) {
+    const currentTarget = e.target;
+    setActiveBtn(e);
     portfolioCards.forEach((card) => {
-        card.classList.add("hide-card");
-        if (card.dataset.name === targetElement.dataset.name || targetElement.dataset.name === "all") {
-            card.classList.remove("hide-card");
+        card.classList.remove("hide-card");
+        card.classList.add("show-card");
+        const imgType = card.dataset.name;
+        const btnType = currentTarget.dataset.name;
+        if (imgType !== btnType) {
+            card.classList.remove("show-card");
+            card.classList.add("hide-card");
         }
     });
-};
-cardFilterButtons.forEach((button) => button.addEventListener("click", filterCards));
+}
+cardFilterButtons[0].addEventListener("click", (e) => {
+    setActiveBtn(e);
+    portfolioCards.forEach((card) => {
+        card.classList.remove("hide-card");
+        card.classList.add("show-card");
+    });
+});
+// ***************** go up button ***************** //
+const upBtn = document.querySelector(".up-btn");
+document.addEventListener("scroll", () => window.scrollY > 100 ? upBtn === null || upBtn === void 0 ? void 0 : upBtn.classList.remove("up-btn-hidden") : upBtn === null || upBtn === void 0 ? void 0 : upBtn.classList.add("up-btn-hidden"));
+upBtn === null || upBtn === void 0 ? void 0 : upBtn.addEventListener("click", () => window.scrollTo(0, 0));
