@@ -171,23 +171,39 @@ const testimonialsData = [
         name: "Jena Karlis",
         job: "Store Owner"
     },
+    {
+        description: "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.",
+        img_src: "../assets/img/testimonials/testimonials-4.jpg",
+        name: "Matt Brandon",
+        job: "Freelancer"
+    },
+    {
+        description: "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.",
+        img_src: "../assets/img/testimonials/testimonials-5.jpg",
+        name: "John Larson",
+        job: "Entrepreneur"
+    },
 ];
 const cardWrapper = document.querySelector(".testimonial-cards");
 cardWrapper.innerHTML = `
-  ${testimonialsData.map((user) => {
+  ${testimonialsData.map((user, index) => {
     const { description, img_src, name, job } = user;
     return (`
-      <div class="testimonial-item bg-white overflow-hidden">
-        <p class="fst-italic">
-            ${description}
+    <div class="swiper-slide">
+      <div class="testimonial-item bg-white overflow-hidden swiper-slide">
+        <p class="fst-italic position-relative">
+          <iconify-icon icon="mingcute:quote-left-fill"></iconify-icon>
+          ${description}
+          <iconify-icon icon="mingcute:quote-right-fill"></iconify-icon>
         </p>
         <img class="rounded-circle" src="${img_src}"
           alt="testimonial-img">
         <h3>${name}</h3>
         <h4>${job}</h4>
       </div>
+    </div>
     `);
-})}
+}).join("")}
 `;
 // ***************** go up button ***************** //
 const upBtn = document.querySelector(".up-btn");
