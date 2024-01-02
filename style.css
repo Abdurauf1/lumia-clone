@@ -872,6 +872,18 @@ li:nth-child(2):hover i {
   text-align: center;
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  opacity: 1;
+  border: 1px solid var(--blue-2);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--blue-2);
+}
+
 @media screen and (max-width: 1200px) {
   .testimonial-item {
     width: 100%;
