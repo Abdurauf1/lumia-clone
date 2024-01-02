@@ -830,7 +830,6 @@ li:nth-child(2):hover i {
 }
 
 .testimonial-item {
-  width: 328px;
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
   min-height: 350px;
@@ -882,12 +881,6 @@ li:nth-child(2):hover i {
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--blue-2);
-}
-
-@media screen and (max-width: 1200px) {
-  .testimonial-item {
-    width: 100%;
-  }
 }
 
 /* ---------------------------------------------------------- */
