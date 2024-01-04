@@ -1,35 +1,35 @@
 // responsive navbar
-const nav = document.querySelector("nav") as HTMLElement;
-const openNav = document.querySelector(".nav-open-btn") as HTMLButtonElement;
-const closeNav = document.querySelector(".close-nav-btn") as HTMLButtonElement;
-const dropDown = document.querySelector("#dropDown") as HTMLUListElement;
-const deepDropDown = document.querySelector("#deepDropDown") as HTMLUListElement;
-const dropDownBtn = document.querySelector("#dropDownBtn") as HTMLAnchorElement;
-const deepDropDownBtn = document.querySelector("#deepDropDownBtn") as HTMLAnchorElement;
-const navLinks = document.querySelectorAll("nav ul li a") as NodeListOf<HTMLAnchorElement>;
-const navWrapper = document.querySelector("header") as HTMLHeadElement;
-const heroLink = document.querySelector(".header-btn") as HTMLAnchorElement;
+const nav = document.querySelector("nav")
+const openNav = document.querySelector(".nav-open-btn")
+const closeNav = document.querySelector(".close-nav-btn")
+const dropDown = document.querySelector("#dropDown")
+const deepDropDown = document.querySelector("#deepDropDown")
+const dropDownBtn = document.querySelector("#dropDownBtn")
+const deepDropDownBtn = document.querySelector("#deepDropDownBtn")
+const navLinks = document.querySelectorAll("nav ul li a")
+const navWrapper = document.querySelector("header")
+const heroLink = document.querySelector(".header-btn")
 
 // ***************** link to section ***************** //
-navLinks.forEach((link: HTMLAnchorElement) => {
+navLinks.forEach((link) => {
   goToSection(link);
 });
 
 goToSection(heroLink);
 
-function goToSection(e: HTMLAnchorElement) {
-  e.addEventListener("click", (e: any) => {
+function goToSection(e) {
+  e.addEventListener("click", (e) => {
     e.preventDefault();
     if (!e.target.getAttribute("href")) {
       return;
     }
-    const id: string = e.target.getAttribute("href").slice(1);
+    const id = e.target.getAttribute("href").slice(1);
     if (id.length < 1) {
       return;
     }
-    const section: any = document.getElementById(id);
-    const navWrapperHeight: number = navWrapper.getBoundingClientRect().height;
-    let position: number = section.offsetTop - navWrapperHeight;
+    const section = document.getElementById(id);
+    const navWrapperHeight = navWrapper.getBoundingClientRect().height;
+    let position = section.offsetTop - navWrapperHeight;
     window.scrollTo({
       left: 0,
       top: position,
@@ -44,17 +44,17 @@ function goToSection(e: HTMLAnchorElement) {
 }
 
 // ***************** active nav links on scroll ***************** //
-const sections = document.querySelectorAll("section") as NodeListOf<HTMLElement>
+const sections = document.querySelectorAll("section")
 
 function onScroll() {
-  const top: number = window.scrollY;
+  const top = window.scrollY;
   sections.forEach(section => {
-    const offset: number = section.offsetTop - navWrapper.clientHeight;
-    const height: number = section.offsetHeight;
-    const id: string | null = section.getAttribute("id");
+    const offset = section.offsetTop - navWrapper.clientHeight;
+    const height = section.offsetHeight;
+    const id = section.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((navLink: HTMLAnchorElement) => {
+      navLinks.forEach((navLink) => {
         navLink.classList.remove("nav-link-active");
         document.querySelector("header div nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active");
       })
@@ -88,10 +88,10 @@ closeNav.addEventListener("click", () => {
 });
 
 // ***************** fill progress bar ***************** //
-const progressBar = document.querySelectorAll(".progress-bar") as NodeListOf<HTMLDivElement>;
+const progressBar = document.querySelectorAll(".progress-bar")
 
 const fillProgressBars = () => {
-  const top: number = window.scrollY;
+  const top = window.scrollY;
 
   if (top >= progressBar[0].offsetTop - 400) {
     progressBar[0].style.animationName = "html-progress-bar";
@@ -108,12 +108,12 @@ document.addEventListener("scroll", fillProgressBars);
 
 
 // ***************** count numbers animation ***************** //
-const countableNumbers = document.querySelectorAll(".countable-number") as NodeListOf<HTMLHeadingElement>
+const countableNumbers = document.querySelectorAll(".countable-number")
 
-const animateValue = (htmlElement: HTMLHeadingElement, start: number, end: number, duration: number) => {
-  let startTimestamp: null | number = null;
+const animateValue = (htmlElement, start, end, duration) => {
+  let startTimestamp = null;
 
-  const step = (timestamp: number) => {
+  const step = (timestamp) => {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
     const result = Math.floor(progress * (end - start) + start).toString();
@@ -137,15 +137,31 @@ const countNumbers = () => {
 }
 
 document.addEventListener("scroll", countNumbers);
-// ***************** testimonials ***************** //
-interface TestimonialsData {
-  description: string,
-  img_src: string,
-  name: string,
-  job: string
-}
 
-const testimonialsData: TestimonialsData[] = [
+// ***************** testimonials ***************** //
+const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button")
+const portfolioCardsWrapper = document.querySelector(".portfolio-cards-wrapper")
+
+let portfolioIsotope = new Isotope(portfolioCardsWrapper, {
+  itemSelector: ".portfolio-card-parent",
+  layoutMode: "fitRows",
+})
+
+cardFilterButtons.forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.preventDefault()
+    cardFilterButtons.forEach(btn => {
+      btn.classList.remove("card-btn-active")
+    })
+    btn.classList.add("card-btn-active")
+    portfolioIsotope.arrange({
+      filter: btn.getAttribute("data-filter")
+    })
+  })
+})
+
+// ***************** testimonials ***************** //
+const testimonialsData = [
   {
     description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.Accusantium quam, ultricies eget id, aliquam eget nibh et.Maecen aliquam, risus at semper.",
     img_src: "./assets/img/testimonials/testimonials-1.jpg",
@@ -178,9 +194,9 @@ const testimonialsData: TestimonialsData[] = [
   },
 ]
 
-const cardWrapper = document.querySelector(".testimonial-cards") as HTMLDivElement;
+const cardWrapper = document.querySelector(".testimonial-cards");
 cardWrapper.innerHTML = `
-  ${testimonialsData.map((user: TestimonialsData) => {
+  ${testimonialsData.map((user) => {
   const { description, img_src, name, job } = user;
 
   return (
@@ -202,6 +218,32 @@ cardWrapper.innerHTML = `
   )
 }).join("")}
 `;
+
+const swiper = new Swiper('.swiper', {
+  speed: 600,
+  loop: true,
+  direction: "horizontal",
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: "bullets",
+    clickable: true,
+  },
+});
 
 // ***************** go up button ***************** //
 const upBtn = document.querySelector(".up-btn");
