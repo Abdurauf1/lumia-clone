@@ -118,40 +118,6 @@ const countNumbers = () => {
     }
 };
 document.addEventListener("scroll", countNumbers);
-// ***************** card filters ***************** //
-const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button");
-const portfolioCards = document.querySelectorAll(".portfolio-card-parent");
-for (let i = 1; i < cardFilterButtons.length; i++) {
-    cardFilterButtons[i].addEventListener("click", filterImg);
-}
-function setActiveBtn(e) {
-    const currentTarget = e.target;
-    cardFilterButtons.forEach(btn => {
-        btn.classList.remove("card-btn-active");
-    });
-    currentTarget.classList.add("card-btn-active");
-}
-function filterImg(e) {
-    const currentTarget = e.target;
-    setActiveBtn(e);
-    portfolioCards.forEach((card) => {
-        card.classList.remove("hide-card");
-        card.classList.add("show-card");
-        const imgType = card.dataset.name;
-        const btnType = currentTarget.dataset.name;
-        if (imgType !== btnType) {
-            card.classList.remove("show-card");
-            card.classList.add("hide-card");
-        }
-    });
-}
-cardFilterButtons[0].addEventListener("click", (e) => {
-    setActiveBtn(e);
-    portfolioCards.forEach((card) => {
-        card.classList.remove("hide-card");
-        card.classList.add("show-card");
-    });
-});
 const testimonialsData = [
     {
         description: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.Accusantium quam, ultricies eget id, aliquam eget nibh et.Maecen aliquam, risus at semper.",

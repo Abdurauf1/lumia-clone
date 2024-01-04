@@ -446,14 +446,14 @@
                 <p class="text-center sec-one-text">Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
                 <!-- buttons wrapper -->
                 <div class="mx-auto d-flex justify-content-between buttons-wrapper">
-                    <button class="bg-white border-0 text-uppercase card-btn-active" data-name="all">all</button>
-                    <button class="bg-white border-0 text-uppercase" data-name="app">app</button>
-                    <button class="bg-white border-0 text-uppercase" data-name="card">card</button>
-                    <button class="bg-white border-0 text-uppercase" data-name="web">web</button>
+                    <button class="bg-white border-0 text-uppercase card-btn-active" data-filter="*">all</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".app">app</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".card">card</button>
+                    <button class="bg-white border-0 text-uppercase" data-filter=".web">web</button>
                 </div>
                 <!-- cards wrapper -->
                 <div class="row portfolio-cards-wrapper overflow-hidden">
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -476,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -499,7 +499,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -522,7 +522,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -545,7 +545,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -568,7 +568,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="app">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent app wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -590,7 +590,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -613,7 +613,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="card">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent card wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -636,7 +636,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-card-parent" data-name="web">
+                    <div class="col-lg-4 col-md-6 portfolio-card-parent web wow fadeInUp">
                         <div class="portfolio-card">
                             <!-- visible only on hover -->
                             <div class="card-details">
@@ -951,9 +951,12 @@
         crossorigin="anonymous"></script>
     <!-- swiper cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- isotope cdn -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- local javascript file -->
     <script src="./dist/main.js"></script>
     <script src="./src/swiper.js"></script>
+    <script src="./src/isotope.js"></script>
 </body>
 
 </html>
