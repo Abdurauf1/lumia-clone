@@ -2,18 +2,259 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Details - Lumia Bootstrap Template</title>
     <!-- tab icon -->
     <link rel="shortcut icon" href="./assets/icons/apple-touch-icon.png" type="image/x-icon">
-    <!-- local css file -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- import style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>portfolio details</h1>
+    <!-- navbar -->
+    <header class="bg-white d-flex align-items-center sticky-top">
+        <div class="container d-flex align-items-center">
+            <!-- nav-logo -->
+            <h1 class="nav-logo me-auto d-flex align-items-center">
+                <a class="nav-logo-link text-uppercase text-decoration-none" href>lumia</a>
+            </h1>
+            <!-- nav links -->
+            <nav class="navbar p-0">
+                <ul class="nav-links-wrapper d-flex align-items-center m-0">
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize nav-link-active" href="#hero">home</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#about">about</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#services">services</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#testimonials">testimonials</a>
+                    </li>
+                    <!-- drop down -->
+                    <li class="nav-link-parent">
+                        <a id="dropDownBtn" class="nav-link d-flex align-items-center justify-content-between" href="#">
+                            <span class="nav-link-span text-capitalize">drop down</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul id="dropDown" class="drop-down-wrapper bg-white">
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 1</a>
+                            </li>
+                            <!-- deep drop down -->
+                            <li class="nav-link-parent">
+                                <a id="deepDropDownBtn"
+                                    class="nav-link d-flex align-items-center justify-content-between" href="#">
+                                    <span class="nav-link-span text-capitalize">deep drop down</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                                <ul id="deepDropDown" class="deep-drop-down-wrapper bg-white">
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 1</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 2</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 3</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 4</a>
+                                    </li>
+                                    <li class="nav-link-parent">
+                                        <a class="nav-link text-capitalize" href="#">deep drop down 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 2</a>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 3</a>
+                            </li>
+                            <li class="nav-link-parent">
+                                <a class="nav-link text-capitalize" href="#">drop down 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link-parent">
+                        <a class="nav-link text-capitalize" href="#contact">contact</a>
+                    </li>
+                </ul>
+                <!-- close nav modal button -->
+                <i class="bi bi-x close-nav-btn text-white"></i>
+            </nav>
+            <!-- social links -->
+            <div class="nav-social-links d-flex align-items-center">
+                <a href="https://twitter.com/aabdurauf004">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/abdurauf_a_/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <!-- open nav modal button -->
+            <i class="bi bi-list nav-open-btn"></i>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="first-footer">
+            <div class="container">
+                <div class="row">
+                    <!-- top footer -->
+                    <!-- first column -->
+                    <div class="col-lg-3 mb-4 col-md-6">
+                        <h3 class="footer-logo">Lumia</h3>
+                        <p class="footer-info mb-0">A108 Adam Street</p>
+                        <p class="footer-info mb-0">New York, NY 535022</p>
+                        <p class="footer-info mb-0">United States</p>
+                        <p class="footer-info mt-4 mb-0 text-decoration-none"><b>Phone:</b> +1 5589 55488 55</p>
+                        <p class="footer-info mb-0"><b>Email:</b> info@example.com</p>
+                    </div>
+                    <!-- second column -->
+                    <div class="col-lg-2 mb-4 col-md-6">
+                        <h4 class="footer-title">Useful Links</h4>
+                        <ul class="p-0 m-0">
+                            <li class="footer-list-item pt-0">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Services</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Terms of service</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- third column -->
+                    <div class="col-lg-3 mb-4 col-md-6">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="p-0 m-0">
+                            <li class="footer-list-item pt-0">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Web Design</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Web Development</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Product Management</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <i class="bi bi-chevron-right"></i>
+                                <a href="#">Graphic Design</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- fourth column -->
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="footer-title">Join Our Newsletter</h4>
+                        <p class="footer-subtitle">Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                        </p>
+                        <form action class="d-flex subscribe-wrapper">
+                            <input type="text" class="subscribe-input" required>
+                            <button type="submit" class="border-0 subscribe-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- last footer -->
+        <div class="last-footer py-4">
+            <div class="container d-flex flex-md-row flex-column justify-content-between align-items-center">
+                <div>
+                    <p class="m-0 copyright text-center">&#169; Copyright <b>Lumia</b>. All Rights Reserved</p>
+                    <p class="m-0 credits">Designed by <a class="text-decoration-none"
+                            href="https://portfolio-abdurauf1.netlify.app/">Abdurauf Ashurov</a></p>
+                </div>
+                <ul class="d-flex footer-icons mb-0">
+                    <li>
+                        <a class="display-block text-center rounded-circle" href="https://twitter.com/aabdurauf004">
+                            <iconify-icon class="footer-icon" icon="mdi:twitter"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle" href="#">
+                            <iconify-icon class="footer-icon" icon="uil:facebook-f"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://www.instagram.com/abdurauf_a_/">
+                            <iconify-icon class="footer-icon" icon="ph:instagram-logo"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://join.skype.com/invite/AMcROgUPVtV4">
+                            <iconify-icon class="footer-icon" icon="mdi:skype"></iconify-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="display-block text-center rounded-circle"
+                            href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                            <iconify-icon class="footer-icon" icon="typcn:social-linkedin"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button class="up-btn up-btn-hidden border-0 position-fixed d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short text-white"></i>
+    </button>
+    <!-- iconify cdn -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- bootstrap javascript component -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- local javascript file -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
