@@ -138,7 +138,7 @@ const countNumbers = () => {
 
 document.addEventListener("scroll", countNumbers);
 
-// ***************** testimonials ***************** //
+// ***************** portfolio cards ***************** //
 const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button")
 const portfolioCardsWrapper = document.querySelector(".portfolio-cards-wrapper")
 
