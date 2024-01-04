@@ -137,54 +137,6 @@ const countNumbers = () => {
 }
 
 document.addEventListener("scroll", countNumbers);
-
-// ***************** card filters ***************** //
-// const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button") as NodeListOf<HTMLButtonElement>
-// const portfolioCards = document.querySelectorAll(".portfolio-card-parent") as NodeListOf<HTMLDivElement>
-
-
-
-// for (let i = 1; i < cardFilterButtons.length; i++) {
-//   cardFilterButtons[i].addEventListener("click", filterImg);
-// }
-
-// function setActiveBtn(e: MouseEvent) {
-//   const currentTarget = e.target as HTMLElement;
-
-//   cardFilterButtons.forEach(btn => {
-//     btn.classList.remove("card-btn-active");
-//   })
-
-//   currentTarget.classList.add("card-btn-active")
-// }
-
-// function filterImg(e: MouseEvent) {
-//   const currentTarget = e.target as HTMLElement;
-
-//   setActiveBtn(e);
-
-//   portfolioCards.forEach((card: HTMLDivElement) => {
-//     card.classList.remove("hide-card")
-//     card.classList.add("show-card")
-
-//     const imgType: string | undefined = card.dataset.name
-//     const btnType: string | undefined = currentTarget.dataset.name
-
-//     if (imgType !== btnType) {
-//       card.classList.remove("show-card")
-//       card.classList.add("hide-card")
-//     }
-//   })
-// }
-
-// cardFilterButtons[0].addEventListener("click", (e: MouseEvent) => {
-//   setActiveBtn(e)
-//   portfolioCards.forEach((card: HTMLDivElement) => {
-//     card.classList.remove("hide-card");
-//     card.classList.add("show-card")
-//   })
-// })
-
 // ***************** testimonials ***************** //
 interface TestimonialsData {
   description: string,
