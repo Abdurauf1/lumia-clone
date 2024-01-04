@@ -1208,3 +1208,34 @@ footer {
   visibility: hidden;
   opacity: 0;
 }
+
+/* ************** portfolio details styles ************** */
+.back-home-link-wrapper {
+  padding: 40px 0;
+}
+
+.back-home-link-wrapper h2 {
+  font-family: raleway-light, sans-serif;
+}
+
+.back-home-link-wrapper ul {
+  font-size: 15px;
+}
+
+.back-home-link-wrapper ul li a {
+  color: var(--blue-2);
+  transition-duration: 0.3s;
+}
+
+.back-home-link-wrapper ul li a:hover {
+  color: var(--blue-5);
+}
+
+@media screen and (max-width: 770px) {
+  .back-home-link-wrapper {
+    display: block !important;
+  }
+  .back-home-link-wrapper ul {
+    padding: 0;
+  }
+}
