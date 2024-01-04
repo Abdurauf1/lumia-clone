@@ -139,6 +139,7 @@ const countNumbers = () => {
 document.addEventListener("scroll", countNumbers);
 
 // ***************** portfolio cards ***************** //
+// filter cards
 const cardFilterButtons = document.querySelectorAll(".buttons-wrapper button")
 const portfolioCardsWrapper = document.querySelector(".portfolio-cards-wrapper")
 
@@ -158,6 +159,11 @@ cardFilterButtons.forEach(btn => {
       filter: btn.getAttribute("data-filter")
     })
   })
+})
+
+// cards images gallery
+const portfolioLightbox = GLightbox({
+  selector: ".portfolio-lightbox"
 })
 
 // ***************** testimonials ***************** //
