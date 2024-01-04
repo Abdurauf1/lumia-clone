@@ -56,7 +56,7 @@ function onScroll() {
     if (top >= offset && top < offset + height) {
       navLinks.forEach((navLink) => {
         navLink.classList.remove("nav-link-active");
-        document.querySelector("header div nav ul li a[href*=" + id + "]")?.classList.add("nav-link-active");
+        document.querySelector("header div nav ul li a[href*=" + id + "]").classList.add("nav-link-active");
       })
     }
   })
@@ -254,7 +254,7 @@ const swiper = new Swiper('.swiper', {
 // ***************** go up button ***************** //
 const upBtn = document.querySelector(".up-btn");
 
-document.addEventListener("scroll", () => window.scrollY > 100 ? upBtn?.classList.remove("up-btn-hidden") : upBtn?.classList.add("up-btn-hidden")
+document.addEventListener("scroll", () => window.scrollY > 100 ? upBtn.classList.remove("up-btn-hidden") : upBtn.classList.add("up-btn-hidden")
 )
 
-upBtn?.addEventListener("click", () => window.scrollTo(0, 0))
+upBtn.addEventListener("click", () => window.scrollTo(0, 0))
