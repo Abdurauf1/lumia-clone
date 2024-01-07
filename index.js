@@ -225,7 +225,7 @@ cardWrapper.innerHTML = `
 }).join("")}
 `;
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.testimonial-swiper', {
   speed: 600,
   loop: true,
   direction: "horizontal",
